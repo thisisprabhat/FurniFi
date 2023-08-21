@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "379057192444",
+    "project_id": "furnifai",
+    "storage_bucket": "furnifai.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:379057192444:android:10e8b83c7db694b301c679",
+        "android_client_info": {
+          "package_name": "com.example.furnifai"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "379057192444-k5a1jngdmgd7lkqrsa1ujkkef0p643k8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnwYaLKFgla1tjEM0FIZ3nyQMVfH-pOhQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "379057192444-k5a1jngdmgd7lkqrsa1ujkkef0p643k8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
