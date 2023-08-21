@@ -16,9 +16,7 @@ migrate_working_dir/
 *.iws
 .idea/
 
-#Credentials
-lib/firebase_options.dart
-lib/test.txt
+
 
 # The .vscode folder contains launch configuration and tasks you configure in
 # VS Code which you may wish to be included in version control, so this line
@@ -34,7 +32,7 @@ lib/test.txt
 .packages
 .pub-cache/
 .pub/
-pubspec.lock
+
 /build/
 
 # Symbolication related
@@ -47,3 +45,8 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+#Custom gitignore
+pubspec.lock
+lib/firebase_options.dart
+lib/test.txt
