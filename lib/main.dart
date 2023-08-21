@@ -1,9 +1,10 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:furnifai/config/routes.dart';
+import 'package:furnifai/constants/strings.dart';
 
 import 'firebase_options.dart';
-import 'homepage.dart';
+import 'screens/screens.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -19,12 +20,13 @@ class FurniFai extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'FurniFai',
+      title: APP_NAME,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const HomePage(),
+      initialRoute: HomeScreen.route,
+      onGenerateRoute: AppRoute.onGenerateRoute,
     );
   }
 }
