@@ -1,9 +1,9 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:furnifai/config/routes.dart';
-import 'package:furnifai/constants/strings.dart';
 
-import 'firebase_options.dart';
+import 'config/routes.dart';
+import 'constants/strings.dart';
+import 'config/firebase_options.dart';
 import 'screens/screens.dart';
 
 void main() async {
@@ -11,18 +11,19 @@ void main() async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
-  runApp(const FurniFai());
+  runApp(const Furnifi());
 }
 
-class FurniFai extends StatelessWidget {
-  const FurniFai({super.key});
+class Furnifi extends StatelessWidget {
+  const Furnifi({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: APP_NAME,
+      title: AppString.app_name,
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.black),
         useMaterial3: true,
       ),
       initialRoute: HomeScreen.route,

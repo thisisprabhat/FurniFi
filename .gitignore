@@ -48,5 +48,5 @@ app.*.map.json
 
 #Custom gitignore
 pubspec.lock
-lib/firebase_options.dart
+lib/config/firebase_options.dart
 lib/test.txt

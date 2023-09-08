@@ -1,4 +1,4 @@
-# furnifai
+# furnifi
 
 A new Flutter project.
 

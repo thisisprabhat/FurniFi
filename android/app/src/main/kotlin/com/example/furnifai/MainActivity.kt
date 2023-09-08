@@ -1,4 +1,4 @@
-package com.example.furnifai
+package com.example.furnifi
 
 import io.flutter.embedding.android.FlutterActivity
 

@@ -1,6 +1,6 @@
 {
-    "name": "furnifai",
-    "short_name": "furnifai",
+    "name": "furnifi",
+    "short_name": "furnifi",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

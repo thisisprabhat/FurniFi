@@ -1,15 +1,15 @@
 {
   "project_info": {
     "project_number": "379057192444",
-    "project_id": "furnifai",
-    "storage_bucket": "furnifai.appspot.com"
+    "project_id": "furnifi",
+    "storage_bucket": "furnifi.appspot.com"
   },
   "client": [
     {
       "client_info": {
         "mobilesdk_app_id": "1:379057192444:android:10e8b83c7db694b301c679",
         "android_client_info": {
-          "package_name": "com.example.furnifai"
+          "package_name": "com.example.furnifi"
         }
       },
       "oauth_client": [

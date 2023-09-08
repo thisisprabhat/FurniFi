@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "furnifai" "\0"
+            VALUE "FileDescription", "furnifi" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "furnifai" "\0"
+            VALUE "InternalName", "furnifi" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2023 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "furnifai.exe" "\0"
-            VALUE "ProductName", "furnifai" "\0"
+            VALUE "OriginalFilename", "furnifi.exe" "\0"
+            VALUE "ProductName", "furnifi" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END
