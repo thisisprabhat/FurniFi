@@ -1,10 +1,12 @@
+import 'package:Furnifi/config/themes.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
 import 'config/routes.dart';
 import 'constants/strings.dart';
 import 'config/firebase_options.dart';
-import 'screens/screens.dart';
+import 'screens/homescreen/ui/homescreen.dart';
+import 'screens/onboarding/ui/onboarding_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -22,11 +24,9 @@ class Furnifi extends StatelessWidget {
     return MaterialApp(
       title: AppString.app_name,
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.black),
-        useMaterial3: true,
-      ),
-      initialRoute: HomeScreen.route,
+      theme: AppTheme.lightTheme,
+      // initialRoute: HomeScreen.route,
+      initialRoute: OnboardingScreen.route,
       onGenerateRoute: AppRoute.onGenerateRoute,
     );
   }
