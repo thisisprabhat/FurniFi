@@ -22,10 +22,9 @@ class Furnifi extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: AppString.app_name,
+      title: AppString.furnifi,
       debugShowCheckedModeBanner: false,
       theme: AppTheme.lightTheme,
-      // initialRoute: HomeScreen.route,
       initialRoute: OnboardingScreen.route,
       onGenerateRoute: AppRoute.onGenerateRoute,
     );

@@ -1,11 +1,13 @@
-import 'package:Furnifi/screens/homescreen/ui/homescreen.dart';
-import 'package:Furnifi/screens/onboarding/ui/components/onboarding_body.dart';
-import 'package:Furnifi/screens/onboarding/ui/components/onboarding_buttons.dart';
+import 'package:Furnifi/constants/strings.dart';
+import 'package:Furnifi/screens/authentication/ui/login.dart';
 import 'package:Furnifi/widgets/scroll_pill.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
 import '../../../constants/assets.dart';
+
+part 'components/onboarding_body.dart';
+part 'components/onboarding_buttons.dart';
 
 class OnboardingScreen extends StatefulWidget {
   const OnboardingScreen({super.key});
@@ -22,20 +24,18 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
 
   final List<Widget> _items = [
     const OnboardingBody(
-      title: "Get what you need",
-      subtitle:
-          "Customize your surrounding by choosing from our wide variety of collections",
+      title: AppString.onboardingTitle1,
+      subtitle: AppString.onboardingSubtitle1,
       imagePath: Assets.products,
     ),
     OnboardingBody(
-      title: "Get delivery on time",
-      subtitle: "Get delivered safely at your doorsteps",
-      imagePath: Assets.delivery,
-      child: LottieBuilder.asset(Assets.delivery_lottie),
+      title: AppString.onboardingTitle2,
+      subtitle: AppString.onboardingSubtitle2,
+      child: LottieBuilder.asset(Assets.deliveryLottie),
     ),
     const OnboardingBody(
-      title: "Free Assembly",
-      subtitle: "Get Free assembly by our professional assemblers",
+      title: AppString.onboardingTitle3,
+      subtitle: AppString.onboardingSubtitle3,
       imagePath: Assets.repair,
     ),
   ];
@@ -73,9 +73,9 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               curve: Curves.linearToEaseOut,
             ),
             onSkipPressed: () =>
-                Navigator.pushReplacementNamed(context, HomeScreen.route),
+                Navigator.pushReplacementNamed(context, Login.route),
             onGetStartedPress: () =>
-                Navigator.pushReplacementNamed(context, HomeScreen.route),
+                Navigator.pushReplacementNamed(context, Login.route),
           ),
         ],
       ),

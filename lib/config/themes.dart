@@ -6,6 +6,7 @@ class AppTheme {
     colorScheme: const ColorScheme(
       brightness: Brightness.light,
       primary: Colors.black,
+      primaryContainer: Color(0XFF808080),
       onPrimary: Colors.white,
       secondary: Color(0XFFF5F5F5),
       onSecondary: Colors.black,
@@ -15,6 +16,8 @@ class AppTheme {
       onBackground: Colors.black,
       surface: Color(0XFFD9D9D9),
       onSurface: Colors.black,
+      surfaceVariant: Color(0XFFEEEEEE),
+      outline: Color(0XFFD9D9D9),
     ),
     useMaterial3: true,
     textTheme: GoogleFonts.nunitoSansTextTheme().copyWith(
@@ -47,6 +50,7 @@ class AppTheme {
       style: ElevatedButton.styleFrom(
         backgroundColor: Colors.black,
         foregroundColor: Colors.white,
+        textStyle: const TextStyle(fontSize: 20),
         padding: const EdgeInsets.all(18),
         elevation: 0,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),

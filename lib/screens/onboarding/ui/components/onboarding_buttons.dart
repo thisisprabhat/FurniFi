@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+part of '../onboarding_screen.dart';
 
 class OnboardingButtons extends StatelessWidget {
   const OnboardingButtons({
@@ -28,7 +28,7 @@ class OnboardingButtons extends StatelessWidget {
             constraints: const BoxConstraints(minWidth: double.maxFinite),
             child: ElevatedButton(
               onPressed: onGetStartedPress,
-              child: const Text("Get Started"),
+              child: const Text(AppString.getStarted),
             ),
           ),
           child: Row(
@@ -36,7 +36,7 @@ class OnboardingButtons extends StatelessWidget {
             children: [
               TextButton(
                 onPressed: onSkipPressed,
-                child: const Text("Skip"),
+                child: const Text(AppString.skip),
               ),
               InkWell(
                 borderRadius: BorderRadius.circular(30),
@@ -51,7 +51,7 @@ class OnboardingButtons extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        "   Next ",
+                        "   ${AppString.next} ",
                         style: Theme.of(context)
                             .textTheme
                             .labelMedium

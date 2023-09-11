@@ -1,5 +1,4 @@
-import 'package:Furnifi/constants/assets.dart';
-import 'package:flutter/material.dart';
+part of '../onboarding_screen.dart';
 
 class OnboardingBody extends StatelessWidget {
   const OnboardingBody({
@@ -39,6 +38,7 @@ class OnboardingBody extends StatelessWidget {
               Text(
                 subtitle,
                 textAlign: TextAlign.center,
+                style: Theme.of(context).textTheme.bodyLarge,
               )
             ],
           ),
