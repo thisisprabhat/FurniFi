@@ -4,9 +4,19 @@ class AppString {
   static const skip = 'Skip';
   static const getStarted = 'Get Started';
   static const login = 'Login';
+  static const signup = 'Signup';
   static const createNewAccount = 'Create new Account';
   static const email = 'Email';
   static const password = 'Password';
+  static const phone = 'Phone';
+  static const enterPhone = 'Enter your phone number';
+  static const confirmPassword = 'Confirm Password';
+  static const confirmPasswordHint = 'Confirm your password';
+  static const firstname = 'First Name';
+  static const firstNameHint = 'Enter your first name';
+  static const lastName = 'Last Name';
+  static const lastNameHint = 'Enter your last name';
+  static const alreadyHaveAnAccount = 'Already have an account?';
 
   static const enterPassword = 'Enter Password';
   static const enterEmail = 'Enter your Email Id';

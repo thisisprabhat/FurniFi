@@ -1,9 +1,11 @@
-import 'package:Furnifi/constants/assets.dart';
-import 'package:Furnifi/constants/strings.dart';
-import 'package:Furnifi/constants/style.dart';
-import 'package:Furnifi/utils/validator.dart';
+import 'package:Furnifi/screens/authentication/ui/signup.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+
+import '../../../constants/assets.dart';
+import '../../../constants/strings.dart';
+import '../../../constants/style.dart';
+import '../../../utils/input_validation.dart';
 
 part 'components/login_icon_texts.dart';
 part 'components/login_bottom_buttons.dart';
@@ -46,7 +48,7 @@ class _LoginState extends State<Login> {
               const LoginIconAndTexts(),
               TextFormField(
                 controller: _emailController,
-                validator: InputValidator.validateEmail,
+                validator: InputValidator.email,
                 decoration: const InputDecoration(
                   label: Text(AppString.email),
                   hintText: AppString.enterEmail,
@@ -55,7 +57,7 @@ class _LoginState extends State<Login> {
               TextFormField(
                 controller: _passwordController,
                 obscureText: _isPasswordVisible,
-                validator: InputValidator.validatePassword,
+                validator: InputValidator.password,
                 decoration: InputDecoration(
                   suffix: IconButton(
                     icon: Icon(
@@ -76,7 +78,9 @@ class _LoginState extends State<Login> {
                   FocusScope.of(context).unfocus();
                   _formKey.currentState?.validate();
                 },
-                onCreateNewAccountPressed: () {},
+                onCreateNewAccountPressed: () {
+                  Navigator.pushNamed(context, Signup.route);
+                },
                 onGooglePressed: () {},
                 onFaceBookPressed: () {},
               )

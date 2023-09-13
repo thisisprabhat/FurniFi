@@ -7,4 +7,5 @@ class Assets {
 
   //! Animations
   static const String deliveryLottie = 'assets/animations/delivery_lottie.json';
+  static const String success = 'assets/animations/success.json';
 }
