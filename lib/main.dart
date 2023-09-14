@@ -5,7 +5,6 @@ import 'config/themes.dart';
 import 'config/routes.dart';
 import 'constants/strings.dart';
 import 'config/firebase_options.dart';
-import 'screens/homescreen/ui/homescreen.dart';
 import 'screens/onboarding/ui/onboarding_screen.dart';
 
 void main() async {

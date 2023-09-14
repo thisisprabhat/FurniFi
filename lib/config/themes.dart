@@ -55,7 +55,9 @@ class AppTheme {
         textStyle: const TextStyle(fontSize: 20),
         padding: const EdgeInsets.all(20),
         elevation: 0,
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(10),
+        ),
       ),
     ),
   );

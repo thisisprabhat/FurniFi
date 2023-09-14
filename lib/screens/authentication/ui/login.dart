@@ -1,11 +1,12 @@
-import 'package:Furnifi/screens/authentication/ui/signup.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../../../constants/assets.dart';
-import '../../../constants/strings.dart';
-import '../../../constants/style.dart';
-import '../../../utils/input_validation.dart';
+import '/constants/assets.dart';
+import '/constants/strings.dart';
+import '/constants/style.dart';
+import '/utils/input_validation.dart';
+import '/screens/authentication/ui/signup.dart';
+import '/screens/mainpage/ui/mainpage.dart';
 
 part 'components/login_icon_texts.dart';
 part 'components/login_bottom_buttons.dart';
@@ -33,7 +34,8 @@ class _LoginState extends State<Login> {
         backgroundColor: colorScheme.background,
         actions: [
           TextButton(
-            onPressed: () {},
+            onPressed: () =>
+                Navigator.pushReplacementNamed(context, MainPage.route),
             child: const Text(AppString.skip, style: TextStyle(fontSize: 18)),
           ),
         ],
@@ -83,7 +85,8 @@ class _LoginState extends State<Login> {
                 },
                 onGooglePressed: () {},
                 onFaceBookPressed: () {},
-              )
+              ),
+              const SizedBox(height: 20)
             ],
           ),
         ),

@@ -1,10 +1,10 @@
-import 'package:Furnifi/constants/strings.dart';
-import 'package:Furnifi/screens/authentication/ui/login.dart';
-import 'package:Furnifi/widgets/scroll_pill.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
-import '../../../constants/assets.dart';
+import '/constants/assets.dart';
+import '/constants/strings.dart';
+import '/screens/authentication/ui/login.dart';
+import '/widgets/scroll_pill.dart';
 
 part 'components/onboarding_body.dart';
 part 'components/onboarding_buttons.dart';

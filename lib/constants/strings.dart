@@ -17,6 +17,13 @@ class AppString {
   static const lastName = 'Last Name';
   static const lastNameHint = 'Enter your last name';
   static const alreadyHaveAnAccount = 'Already have an account?';
+  static const profile = 'Profile';
+  static const address = 'Address';
+  static const orders = 'Orders';
+  static const favourites = 'Favourites';
+  static const cart = 'Cart';
+  static const settings = 'Settings';
+  static const logout = 'Logout';
 
   static const enterPassword = 'Enter Password';
   static const enterEmail = 'Enter your Email Id';
