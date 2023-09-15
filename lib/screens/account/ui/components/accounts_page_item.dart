@@ -22,6 +22,5 @@ class AccountPageItem extends StatelessWidget {
         color: colorScheme.outlineVariant,
       ),
     );
-    ;
   }
 }

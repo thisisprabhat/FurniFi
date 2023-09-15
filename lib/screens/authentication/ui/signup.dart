@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
+import '/widgets/profile_image.dart';
 import '/constants/strings.dart';
 import '/utils/input_validation.dart';
 
-part 'components/signup_profile_image.dart';
 part 'components/signup_text_fields.dart';
 
 class Signup extends StatefulWidget {
@@ -35,8 +35,12 @@ class _SignupState extends State<Signup> {
       body: ListView(
         padding: const EdgeInsets.symmetric(horizontal: 20),
         children: [
-          SignupProfileImage(
-            onEditPressed: () {}, //TODO: Add Image Implementation
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 20.0),
+            child: ProfileImage(
+              isEditable: true,
+              onEditPressed: () {},
+            ),
           ),
           SignupTextFields(
             emailController: _emailController,

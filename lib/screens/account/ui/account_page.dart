@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:furnifi/constants/strings.dart';
 
-import '../../notification/ui/notification.dart';
+import '/constants/strings.dart';
 import '/constants/style.dart';
+import '/widgets/profile_image.dart';
+import '/screens/address/ui/change_address.dart';
+import '/screens/profile/ui/profile_page.dart';
+import '/screens/notification/ui/notification.dart';
 
 part 'components/accounts_page_card.dart';
 part 'components/accounts_page_item.dart';
@@ -39,12 +42,12 @@ class AccountPage extends StatelessWidget {
               AccountPageItem(
                 title: AppString.profile,
                 icon: Icons.person_outline_rounded,
-                onTap: () {},
+                onTap: () => Navigator.pushNamed(context, ProfilePage.route),
               ),
               AccountPageItem(
                 title: AppString.address,
                 icon: Icons.home_work_outlined,
-                onTap: () {},
+                onTap: () => Navigator.pushNamed(context, ChangeAddress.route),
               ),
             ],
           ),

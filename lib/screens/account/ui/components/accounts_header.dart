@@ -19,26 +19,7 @@ class AccountsHeader extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Container(
-            height: 140,
-            width: 140,
-            foregroundDecoration: const BoxDecoration(
-              shape: BoxShape.circle,
-              image: DecorationImage(
-                image: AssetImage(""), //TODO: Add image here
-              ),
-            ),
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              color: colorScheme.surface,
-              border: Border.all(color: colorScheme.outline, width: 2),
-            ),
-            child: Icon(
-              Icons.person_rounded,
-              color: colorScheme.primaryContainer,
-              size: 80,
-            ),
-          ),
+          ProfileImage(),
           const SizedBox(height: 4),
           Text(
             name ?? "N/A",
