@@ -45,6 +45,9 @@ class AppString {
   static const home = 'Home';
   static const work = 'Work';
   static const others = 'Others';
+  static const notification = 'Notification';
+  static const markAllAsRead = 'Mark all as read';
+  static const unreadNotifications = 'Unread notifications';
 
   static const enterPassword = 'Enter Password';
   static const enterEmail = 'Enter your Email Id';

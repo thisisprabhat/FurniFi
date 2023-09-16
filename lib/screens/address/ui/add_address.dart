@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:furnifi/constants/style.dart';
-import 'package:furnifi/widgets/address_card.dart';
 
+import '/constants/style.dart';
+import '/widgets/address_card.dart';
 import '/utils/input_validation.dart';
 import '/constants/strings.dart';
 
