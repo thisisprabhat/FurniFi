@@ -31,8 +31,8 @@ class _TypeOfAddressState extends State<TypeOfAddress> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         const Padding(
-          padding: const EdgeInsets.symmetric(vertical: 8.0),
-          child: const Text(AppString.typeOfAddress),
+          padding: EdgeInsets.symmetric(vertical: 8.0),
+          child: Text(AppString.typeOfAddress),
         ),
         Wrap(
           spacing: paddingDefault / 2,

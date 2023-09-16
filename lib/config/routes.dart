@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '/screens/orders/ui/orders_page.dart';
+import '/screens/favourite/ui/favourites_page.dart';
 import '/screens/address/ui/change_address.dart';
 import '/screens/address/ui/add_address.dart';
 import '/screens/notification/ui/notification.dart';
@@ -28,6 +30,10 @@ class AppRoute {
         return MaterialPageRoute(builder: (_) => const AddAddress());
       case ChangeAddress.route:
         return MaterialPageRoute(builder: (_) => const ChangeAddress());
+      case FavouritesPage.route:
+        return MaterialPageRoute(builder: (_) => const FavouritesPage());
+      case OrdersPage.route:
+        return MaterialPageRoute(builder: (_) => const OrdersPage());
       default:
         return null;
     }

@@ -6,6 +6,8 @@ import '/widgets/profile_image.dart';
 import '/screens/address/ui/change_address.dart';
 import '/screens/profile/ui/profile_page.dart';
 import '/screens/notification/ui/notification.dart';
+import '/screens/favourite/ui/favourites_page.dart';
+import '/screens/orders/ui/orders_page.dart';
 
 part 'components/accounts_page_card.dart';
 part 'components/accounts_page_item.dart';
@@ -56,12 +58,12 @@ class AccountPage extends StatelessWidget {
               AccountPageItem(
                 title: AppString.orders,
                 icon: Icons.line_style_rounded,
-                onTap: () {},
+                onTap: () => Navigator.pushNamed(context, OrdersPage.route),
               ),
               AccountPageItem(
                 title: AppString.favourites,
                 icon: Icons.favorite_border_rounded,
-                onTap: () {},
+                onTap: () => Navigator.pushNamed(context, FavouritesPage.route),
               ),
               AccountPageItem(
                 title: AppString.cart,
