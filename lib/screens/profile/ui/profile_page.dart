@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '/screens/address/ui/change_address.dart';
 import '/widgets/address_card.dart';
 import '/constants/strings.dart';
 import '/constants/style.dart';
@@ -99,7 +100,8 @@ class _ProfilePageState extends State<ProfilePage> {
                       ),
                     ),
                     TextButton(
-                      onPressed: () {},
+                      onPressed: () =>
+                          Navigator.pushNamed(context, ChangeAddress.route),
                       child: const Text(AppString.change),
                     ),
                   ],

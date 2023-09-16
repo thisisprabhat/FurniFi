@@ -6,3 +6,6 @@ final borderRadiusMedium = BorderRadius.circular(20);
 final borderRadiusLarge = BorderRadius.circular(30);
 
 const double paddingDefault = 16;
+
+const Color successColor = Colors.green;
+const Color onSuccessColor = Colors.white;
