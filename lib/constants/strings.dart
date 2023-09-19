@@ -48,6 +48,7 @@ class AppString {
   static const notification = 'Notification';
   static const markAllAsRead = 'Mark all as read';
   static const unreadNotifications = 'Unread notifications';
+  static const productsInTheCart = 'Products in the cart';
 
   static const enterPassword = 'Enter Password';
   static const enterEmail = 'Enter your Email Id';

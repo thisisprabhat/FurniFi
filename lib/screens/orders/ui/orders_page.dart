@@ -27,20 +27,21 @@ class OrdersPage extends StatelessWidget {
         ],
       ),
       body: ListView.builder(
-          padding: const EdgeInsets.only(
-            top: paddingDefault / 2,
-            left: paddingDefault,
-            right: paddingDefault,
-          ),
-          itemCount: 10,
-          itemBuilder: (_, index) {
-            return OrdersCard(
-              productName: "Danderyd Chair",
-              deliveryStatus: "Delivery ExpectedBy sept 22",
-              productImageUrl:
-                  'https://images.unsplash.com/photo-1592078615290-033ee584e267?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80',
-            );
-          }),
+        padding: const EdgeInsets.only(
+          top: paddingDefault / 2,
+          left: paddingDefault,
+          right: paddingDefault,
+        ),
+        itemCount: 10,
+        itemBuilder: (_, index) {
+          return OrdersCard(
+            productName: "Danderyd Chair",
+            deliveryStatus: "Delivery ExpectedBy sept 22",
+            productImageUrl:
+                'https://images.unsplash.com/photo-1592078615290-033ee584e267?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80',
+          );
+        },
+      ),
     );
   }
 }

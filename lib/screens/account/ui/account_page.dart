@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:furnifi/screens/cart/ui/cart_page.dart';
 
 import '/constants/strings.dart';
 import '/constants/style.dart';
@@ -68,7 +69,7 @@ class AccountPage extends StatelessWidget {
               AccountPageItem(
                 title: AppString.cart,
                 icon: Icons.shopping_cart_outlined,
-                onTap: () {},
+                onTap: () => Navigator.pushNamed(context, CartPage.route),
               ),
             ],
           ),
