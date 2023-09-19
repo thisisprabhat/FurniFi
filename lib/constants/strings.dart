@@ -32,6 +32,7 @@ class AppString {
   static const logout = 'Logout';
   static const submit = 'Submit';
   static const addAddress = 'Add Address';
+  static const deliveryAddress = 'Delivery Address';
   static const changeAddress = 'Change Delivery Address';
   static const pinCode = 'Pincode';
   static const pinCodeHint = 'Enter pincode';
@@ -52,6 +53,9 @@ class AppString {
   static const unreadNotifications = 'Unread notifications';
   static const productsInTheCart = 'Products in the cart';
   static const enterPromoCode = 'Enter your promo code';
+  static const continueString = 'Continue';
+
+  static const orderSummary = 'Order Summary';
 
   static const enterPassword = 'Enter Password';
   static const enterEmail = 'Enter your Email Id';

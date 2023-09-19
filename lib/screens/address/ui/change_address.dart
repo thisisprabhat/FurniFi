@@ -14,7 +14,7 @@ class ChangeAddress extends StatefulWidget {
 }
 
 class _ChangeAddressState extends State<ChangeAddress> {
-  List<Map<String, dynamic>> _addresses = [
+  final List<Map<String, dynamic>> _addresses = [
     {
       "name": 'Prabhat Kumar',
       "address":

@@ -27,11 +27,12 @@ class AddressCard extends StatelessWidget {
     final colorScheme = Theme.of(context).colorScheme;
     return InkWell(
       onTap: onTap,
+      borderRadius: borderRadiusMedium,
       child: Container(
         padding: const EdgeInsets.all(paddingDefault),
         decoration: BoxDecoration(
           color: colorScheme.surface,
-          borderRadius: borderRadiusSmall,
+          borderRadius: borderRadiusMedium,
           border: Border.all(
             color: isSelected ? colorScheme.primary : Colors.transparent,
           ),

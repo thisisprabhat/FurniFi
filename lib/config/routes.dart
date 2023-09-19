@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '/screens/order_summary/ui/order_summary.dart';
 import '/screens/cart/ui/cart_page.dart';
 import '/screens/orders/ui/orders_page.dart';
 import '/screens/favourite/ui/favourites_page.dart';
@@ -37,6 +38,8 @@ class AppRoute {
         return MaterialPageRoute(builder: (_) => const OrdersPage());
       case CartPage.route:
         return MaterialPageRoute(builder: (_) => const CartPage());
+      case OrderSummary.route:
+        return MaterialPageRoute(builder: (_) => const OrderSummary());
       default:
         return null;
     }

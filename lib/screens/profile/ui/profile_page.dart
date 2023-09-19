@@ -106,7 +106,6 @@ class _ProfilePageState extends State<ProfilePage> {
                     ),
                   ],
                 ),
-                const SizedBox(height: paddingDefault),
                 const AddressCard(
                   name: 'Prabhat Kumar',
                   address:

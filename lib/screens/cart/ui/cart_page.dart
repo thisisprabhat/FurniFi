@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:furnifi/constants/strings.dart';
 
+import '/screens/order_summary/ui/order_summary.dart';
+import '/constants/strings.dart';
 import '/constants/style.dart';
 
 part 'components/cart_page_card.dart';
@@ -9,7 +10,7 @@ part 'components/cart_page_bottom.dart';
 class CartPage extends StatelessWidget {
   const CartPage({super.key});
   static const route = 'cart';
-  static const List<Map<String, dynamic>> itemList = [
+  static const List<Map<String, dynamic>> _itemList = [
     {
       'productName': "Danderyd Chair",
       'productDescription': "Durable metal springs in the seat give the sofa",
@@ -44,7 +45,7 @@ class CartPage extends StatelessWidget {
               top: paddingDefault,
             ),
             child: Text(
-              '${AppString.productsInTheCart} : ${itemList.length}',
+              '${AppString.productsInTheCart} : ${_itemList.length}',
               style: TextStyle(
                 color: Theme.of(context).colorScheme.outlineVariant,
               ),
@@ -57,9 +58,9 @@ class CartPage extends StatelessWidget {
                 right: paddingDefault,
                 top: paddingDefault,
               ),
-              itemCount: itemList.length,
+              itemCount: _itemList.length,
               itemBuilder: (_, index) {
-                final item = itemList[index];
+                final item = _itemList[index];
                 return CartPageCard(
                   productName: item['productName'],
                   productDescription: item['productDescription'],
@@ -74,7 +75,8 @@ class CartPage extends StatelessWidget {
             total: '27000',
             promoValue: (value) {},
             onPromoButtonPressed: () {},
-            onCheckoutPressed: () {},
+            onCheckoutPressed: () =>
+                Navigator.pushNamed(context, OrderSummary.route),
           ),
         ],
       ),
