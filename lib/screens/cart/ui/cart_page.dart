@@ -4,6 +4,7 @@ import 'package:furnifi/constants/strings.dart';
 import '/constants/style.dart';
 
 part 'components/cart_page_card.dart';
+part 'components/cart_page_bottom.dart';
 
 class CartPage extends StatelessWidget {
   const CartPage({super.key});
@@ -68,6 +69,12 @@ class CartPage extends StatelessWidget {
                 );
               },
             ),
+          ),
+          CartPageBottom(
+            total: '27000',
+            promoValue: (value) {},
+            onPromoButtonPressed: () {},
+            onCheckoutPressed: () {},
           ),
         ],
       ),
