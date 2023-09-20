@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 import '/screens/account/ui/account_page.dart';
-import '../../cart/ui/cart_page.dart';
-import '/screens/homescreen/ui/homescreen.dart';
+import '/screens/cart/ui/cart_page.dart';
+import '/screens/homepage/ui/homepage.dart';
 import '/screens/search/ui/search_page.dart';
 
 class MainPage extends StatefulWidget {
@@ -66,28 +66,6 @@ class _MainPageState extends State<MainPage> {
             label: "Account",
           ),
         ],
-      ),
-    );
-  }
-}
-
-class Page extends StatelessWidget {
-  const Page({Key? key, required this.pageNumber}) : super(key: key);
-  final int pageNumber;
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      color: const Color(0xffC4DFCB),
-      child: Center(
-        child: Text(
-          "Page Number ${pageNumber + 1}",
-          style: TextStyle(
-            color: Colors.green[900],
-            fontSize: 45,
-            fontWeight: FontWeight.w500,
-          ),
-        ),
       ),
     );
   }
