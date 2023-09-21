@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:furnifi/widgets/scroll_pill.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '/constants/style.dart';
@@ -9,6 +10,7 @@ import '/screens/notification/ui/notification.dart';
 
 part 'components/homepage_card.dart';
 part 'components/homepage_scrollable_images.dart';
+part 'components/homepage_explore.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -67,27 +69,36 @@ class HomePage extends StatelessWidget {
               )
             ],
           ),
-          SliverGrid(
-            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-              childAspectRatio: 3 / 4.4,
-              crossAxisCount: 2,
-              crossAxisSpacing: paddingDefault / 2,
-              mainAxisSpacing: paddingDefault / 2,
-            ),
-            delegate: SliverChildBuilderDelegate(
-              (context, index) {
-                return const HomePageCard(
-                  name: "Maxican Sofa",
-                  description:
-                      'Durable metal springs in the seat give the sofa a springy comfort, allowing you to sit, relax and enjoy it for many years.',
-                  price: 23500,
-                  discountPercentage: 26,
-                  imageUrl:
-                      "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-                  rating: 4.3,
-                );
-              },
-              childCount: 10,
+          SliverList.list(
+            children: const [
+              HomepageScrollableImages(),
+              HomePageExplore(),
+            ],
+          ),
+          SliverPadding(
+            padding: const EdgeInsets.all(paddingDefault),
+            sliver: SliverGrid(
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                childAspectRatio: 3 / 4.4,
+                crossAxisCount: 2,
+                crossAxisSpacing: paddingDefault / 2,
+                mainAxisSpacing: paddingDefault / 2,
+              ),
+              delegate: SliverChildBuilderDelegate(
+                (context, index) {
+                  return const HomePageCard(
+                    name: "Maxican Sofa",
+                    price: 23500,
+                    discountPercentage: 26,
+                    rating: 4.2,
+                    description:
+                        'Durable metal springs in the seat give the sofa a springy comfort, allowing you to sit, relax and enjoy it for many years.',
+                    imageUrl:
+                        "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+                  );
+                },
+                childCount: 10,
+              ),
             ),
           ),
         ],

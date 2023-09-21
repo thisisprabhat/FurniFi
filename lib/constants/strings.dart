@@ -54,6 +54,7 @@ class AppString {
   static const productsInTheCart = 'Products in the cart';
   static const enterPromoCode = 'Enter your promo code';
   static const continueString = 'Continue';
+  static const explore = 'Explore';
 
   static const orderSummary = 'Order Summary';
 

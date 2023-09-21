@@ -23,87 +23,95 @@ class HomePageCard extends StatelessWidget {
     final discountPrice =
         ((price ?? 0) - (price ?? 0) * ((discountPercentage ?? 0) / 100))
             .truncate();
-    return Container(
-      padding: const EdgeInsets.all(paddingDefault / 2),
-      decoration: BoxDecoration(
-        color: colorScheme.surface,
-        borderRadius: borderRadiusMedium,
-      ),
-      child: Column(
-        children: [
-          Expanded(
-            child: Container(
-              width: double.maxFinite,
-              decoration: BoxDecoration(
-                color: colorScheme.surfaceTint,
-                borderRadius: borderRadiusMedium,
-                image: DecorationImage(
-                  image: NetworkImage(imageUrl ?? ""),
-                  fit: BoxFit.cover,
+    return InkWell(
+      onTap: () {}, //TODO: Implement onTap property in homepage card
+      borderRadius: borderRadiusMedium,
+      child: Container(
+        padding: const EdgeInsets.all(paddingDefault / 2),
+        decoration: BoxDecoration(
+          color: colorScheme.surface,
+          borderRadius: borderRadiusMedium,
+        ),
+        child: Column(
+          children: [
+            Expanded(
+              child: Container(
+                width: double.maxFinite,
+                decoration: BoxDecoration(
+                  color: colorScheme.surfaceTint,
+                  borderRadius: borderRadiusMedium,
+                  image: DecorationImage(
+                    image: NetworkImage(imageUrl ?? ""),
+                    fit: BoxFit.cover,
+                  ),
                 ),
               ),
             ),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    name ?? 'N/A',
+                    style: const TextStyle(
+                        fontSize: 12, fontWeight: FontWeight.w500),
+                  ),
+                  Text(
+                    description ?? 'N/A',
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
+                    style: TextStyle(
+                        color: colorScheme.outlineVariant, fontSize: 10),
+                  ),
+                ],
+              ),
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                Text(
-                  name ?? 'N/A',
-                  style: const TextStyle(
-                      fontSize: 12, fontWeight: FontWeight.w500),
-                ),
-                Text(
-                  description ?? 'N/A',
-                  maxLines: 2,
-                  overflow: TextOverflow.ellipsis,
-                  style: TextStyle(
-                      color: colorScheme.outlineVariant, fontSize: 10),
-                ),
-              ],
-            ),
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: [
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Row(
-                      children: [
-                        Text(
-                          " ₹${price?.truncate()}  ",
-                          style: TextStyle(
-                            decoration: TextDecoration.lineThrough,
-                            color: colorScheme.outlineVariant,
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Row(
+                        children: [
+                          Text(
+                            " ₹${price?.truncate()}  ",
+                            style: TextStyle(
+                              fontSize: 12,
+                              decoration: TextDecoration.lineThrough,
+                              color: colorScheme.outlineVariant,
+                            ),
                           ),
-                        ),
-                        Text(
-                          "₹$discountPrice",
-                          style: const TextStyle(fontWeight: FontWeight.bold),
-                        ),
-                      ],
-                    ),
-                    SizedBox(height: 8),
-                    RatingPill(
-                      rating: rating,
-                    ),
-                  ],
+                          Text(
+                            "₹$discountPrice",
+                            style: const TextStyle(
+                              fontSize: 12,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ],
+                      ),
+                      const SizedBox(height: 8),
+                      RatingPill(
+                        rating: rating,
+                      ),
+                    ],
+                  ),
                 ),
-              ),
-              IconButton(
-                style: IconButton.styleFrom(
-                    backgroundColor: colorScheme.surfaceVariant,
-                    elevation: 2,
-                    shadowColor: Colors.black38),
-                onPressed: () {}, //TODO: Add to cart function
-                icon: const Icon(Icons.shopping_cart_outlined),
-              )
-            ],
-          )
-        ],
+                IconButton(
+                  style: IconButton.styleFrom(
+                      backgroundColor: colorScheme.surfaceVariant,
+                      elevation: 2,
+                      shadowColor: Colors.black38),
+                  onPressed: () {}, //TODO: Add to cart function
+                  icon: const Icon(Icons.shopping_cart_outlined),
+                )
+              ],
+            )
+          ],
+        ),
       ),
     );
   }

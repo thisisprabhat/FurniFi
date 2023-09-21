@@ -120,15 +120,19 @@ class _ProfilePageState extends State<ProfilePage> {
                   reverseDuration: const Duration(milliseconds: 500),
                   child: !edit
                       ? const SizedBox.shrink()
-                      : ConstrainedBox(
-                          constraints:
-                              const BoxConstraints(minWidth: double.maxFinite),
-                          child: ElevatedButton(
-                            onPressed: () {},
-                            child: const Text(AppString.submit),
+                      : Padding(
+                          padding:
+                              const EdgeInsets.only(bottom: paddingDefault),
+                          child: ConstrainedBox(
+                            constraints: const BoxConstraints(
+                                minWidth: double.maxFinite),
+                            child: ElevatedButton(
+                              onPressed: () {},
+                              child: const Text(AppString.submit),
+                            ),
                           ),
                         ),
-                )
+                ),
               ],
             )
           ],
