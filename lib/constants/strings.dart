@@ -63,6 +63,25 @@ class AppString {
   static const loginAppInfo =
       'Personalize your surrounding with wide range of our collection';
 
+  //Product category
+  static const popular = 'Popular';
+  static const chair = 'Chair';
+  static const table = 'Table';
+  static const sofa = 'Sofa';
+  static const bed = 'Bed';
+  static const bookSelf = 'Self';
+  static const cabinet = 'Cabinet';
+  static const lamp = 'lamp';
+
+  //Feedback
+  static const feedback = 'Feedback';
+  static const feedbackType = 'Feedback Type';
+  static const feedbackHint = 'Enter your feedback here ...';
+  static const query = 'Query';
+  static const suggestion = 'Suggestion';
+  static const complaint = 'Complaint';
+  static const complement = 'Complement';
+
   //Onboarding
   static const onboardingTitle1 = 'Get what you need';
   static const onboardingSubtitle1 =

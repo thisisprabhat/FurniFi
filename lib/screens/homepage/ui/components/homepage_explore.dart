@@ -21,11 +21,49 @@ class HomePageExplore extends StatefulWidget {
 class _HomePageExploreState extends State<HomePageExplore> {
   Category selectedCategory = Category.popular;
 
-  String _getImageIcon(Category? category) {
-    if (category != null) {
-      return '${Assets.baseImages}${category.toString().split('.').last}.png';
-    } else {
-      return Assets.popular;
+  String _getCategoryImageIcon(Category? category) {
+    switch (category) {
+      case Category.popular:
+        return Assets.popular;
+      case Category.chair:
+        return Assets.chair;
+      case Category.table:
+        return Assets.table;
+      case Category.sofa:
+        return Assets.sofa;
+      case Category.bed:
+        return Assets.bed;
+      case Category.bookSelf:
+        return Assets.bookSelf;
+      case Category.cabinetDrawer:
+        return Assets.cabinetDrawer;
+      case Category.lamp:
+        return Assets.lamp;
+      default:
+        return '';
+    }
+  }
+
+  String _getCategoryText(Category? category) {
+    switch (category) {
+      case Category.popular:
+        return AppString.popular;
+      case Category.chair:
+        return AppString.chair;
+      case Category.table:
+        return AppString.table;
+      case Category.sofa:
+        return AppString.sofa;
+      case Category.bed:
+        return AppString.bed;
+      case Category.bookSelf:
+        return AppString.bookSelf;
+      case Category.cabinetDrawer:
+        return AppString.cabinet;
+      case Category.lamp:
+        return AppString.lamp;
+      default:
+        return 'not defined';
     }
   }
 
@@ -56,34 +94,46 @@ class _HomePageExploreState extends State<HomePageExplore> {
               itemBuilder: (_, index) {
                 final category = Category.values[index];
                 bool isSelected = selectedCategory == category;
-                return InkWell(
-                  onTap: () {
-                    setState(() {
-                      selectedCategory = category;
-                    });
-                  },
-                  borderRadius: borderRadiusSmall,
-                  child: Container(
-                    margin: const EdgeInsets.all(paddingDefault / 4),
-                    height: 60,
-                    width: 70,
-                    decoration: BoxDecoration(
-                      borderRadius: borderRadiusSmall,
-                      color: isSelected
-                          ? colorScheme.primary
-                          : colorScheme.surface,
-                    ),
-                    child: Center(
-                      child: Image.asset(
-                        _getImageIcon(category),
-                        height: 40,
-                        width: 40,
-                        color: isSelected
-                            ? colorScheme.onPrimary
-                            : colorScheme.outlineVariant,
+                return Column(
+                  children: [
+                    InkWell(
+                      onTap: () {
+                        setState(() {
+                          selectedCategory = category;
+                        });
+                      },
+                      borderRadius: borderRadiusMedium,
+                      child: Container(
+                        margin: const EdgeInsets.all(paddingDefault / 4),
+                        height: 60,
+                        width: 60,
+                        decoration: BoxDecoration(
+                          borderRadius: borderRadiusMedium,
+                          color: isSelected
+                              ? colorScheme.primary
+                              : colorScheme.surface,
+                        ),
+                        child: Center(
+                          child: Image.asset(
+                            _getCategoryImageIcon(category),
+                            height: 40,
+                            width: 40,
+                            color: isSelected
+                                ? colorScheme.onPrimary
+                                : colorScheme.outlineVariant,
+                          ),
+                        ),
                       ),
                     ),
-                  ),
+                    Text(
+                      _getCategoryText(category),
+                      style: TextStyle(
+                        color: isSelected
+                            ? colorScheme.primary
+                            : colorScheme.outlineVariant,
+                      ),
+                    )
+                  ],
                 );
               },
             ),

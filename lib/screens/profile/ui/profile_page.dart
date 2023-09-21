@@ -125,7 +125,8 @@ class _ProfilePageState extends State<ProfilePage> {
                               const EdgeInsets.only(bottom: paddingDefault),
                           child: ConstrainedBox(
                             constraints: const BoxConstraints(
-                                minWidth: double.maxFinite),
+                              minWidth: double.maxFinite,
+                            ),
                             child: ElevatedButton(
                               onPressed: () {},
                               child: const Text(AppString.submit),

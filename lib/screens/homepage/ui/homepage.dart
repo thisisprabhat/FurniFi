@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:furnifi/widgets/scroll_pill.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '/constants/style.dart';
 import '/widgets/rating_pill.dart';
+import '/widgets/scroll_pill.dart';
 import '/constants/assets.dart';
 import '/constants/strings.dart';
 import '/screens/notification/ui/notification.dart';

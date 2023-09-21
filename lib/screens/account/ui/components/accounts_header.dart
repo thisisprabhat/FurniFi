@@ -13,13 +13,12 @@ class AccountsHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final colorScheme = Theme.of(context).colorScheme;
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 20.0),
+      padding: const EdgeInsets.symmetric(vertical: paddingDefault),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          ProfileImage(),
+          ProfileImage(imageUrl: imageUrl),
           const SizedBox(height: 4),
           Text(
             name ?? "N/A",

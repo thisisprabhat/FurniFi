@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:furnifi/screens/cart/ui/cart_page.dart';
+import 'package:furnifi/screens/feedback/ui/feedback_page.dart';
 
 import '/constants/strings.dart';
 import '/constants/style.dart';
@@ -34,7 +35,7 @@ class AccountPage extends StatelessWidget {
         ],
       ),
       body: ListView(
-        padding: const EdgeInsets.all(paddingDefault),
+        padding: const EdgeInsets.symmetric(horizontal: paddingDefault),
         children: [
           const AccountsHeader(
             name: "Prabhat Kumar",
@@ -70,6 +71,15 @@ class AccountPage extends StatelessWidget {
                 title: AppString.cart,
                 icon: Icons.shopping_cart_outlined,
                 onTap: () => Navigator.pushNamed(context, CartPage.route),
+              ),
+            ],
+          ),
+          AccountsPageCard(
+            items: [
+              AccountPageItem(
+                title: AppString.feedback,
+                icon: Icons.feedback_outlined,
+                onTap: () => Navigator.pushNamed(context, FeedbackPage.route),
               ),
             ],
           ),

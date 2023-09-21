@@ -48,10 +48,13 @@ class AddressTypeWidget extends StatelessWidget {
           horizontal: 12,
         ),
         decoration: BoxDecoration(
-            color: colorScheme.background,
-            borderRadius: borderRadiusSmall,
-            border: Border.all(
-                color: isSelected ? colorScheme.primary : colorScheme.outline)),
+          color: colorScheme.background,
+          borderRadius: borderRadiusSmall,
+          border: Border.all(
+            width: isSelected ? 2 : 1,
+            color: isSelected ? colorScheme.primary : colorScheme.outline,
+          ),
+        ),
         child: Wrap(
           children: [
             Icon(
