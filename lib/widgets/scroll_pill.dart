@@ -20,9 +20,9 @@ class ScrollablePill extends StatelessWidget {
   double get _pillWidth => _widgetWidth / 4;
 
   double get _position {
-    final pillMovableWidth = _widgetWidth - _widgetWidth / 2;
+    final pillMovableWidth = _widgetWidth - _pillWidth;
     final unitPosition = pillMovableWidth / (lengthOfItems - 1);
-    final position = (unitPosition + _pillWidth / 2) * currentIndex;
+    final position = (unitPosition) * currentIndex;
     return position;
   }
 
@@ -34,7 +34,7 @@ class ScrollablePill extends StatelessWidget {
           height: 10,
           width: _widgetWidth,
           decoration: BoxDecoration(
-            color: pillColor ?? Colors.grey.shade200,
+            color: backgroundColor ?? Colors.grey.shade200,
             borderRadius: BorderRadius.circular(10),
           ),
         ),
@@ -45,7 +45,7 @@ class ScrollablePill extends StatelessWidget {
             height: 10,
             width: _pillWidth,
             decoration: BoxDecoration(
-              color: backgroundColor ?? Colors.black,
+              color: pillColor ?? Colors.black,
               borderRadius: BorderRadius.circular(10),
             ),
           ),
