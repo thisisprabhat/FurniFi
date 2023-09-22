@@ -24,7 +24,9 @@ class HomePageCard extends StatelessWidget {
         ((price ?? 0) - (price ?? 0) * ((discountPercentage ?? 0) / 100))
             .truncate();
     return InkWell(
-      onTap: () {}, //TODO: Implement onTap property in homepage card
+      onTap: () {
+        Navigator.pushNamed(context, ProductDetailsPage.route);
+      }, //TODO: Implement onTap property in homepage card
       borderRadius: borderRadiusMedium,
       child: Container(
         padding: const EdgeInsets.all(paddingDefault / 2),

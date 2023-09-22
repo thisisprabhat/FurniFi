@@ -7,6 +7,7 @@ import '/widgets/scroll_pill.dart';
 import '/constants/assets.dart';
 import '/constants/strings.dart';
 import '/screens/notification/ui/notification.dart';
+import '/screens/product/ui/product_details_page.dart';
 
 part 'components/homepage_card.dart';
 part 'components/homepage_scrollable_images.dart';

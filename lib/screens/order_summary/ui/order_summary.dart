@@ -6,7 +6,7 @@ import '/screens/address/ui/change_address.dart';
 import '/constants/strings.dart';
 
 part 'components/order_summary_card.dart';
-part 'components/price_details_card.dart';
+part 'components/order_price_details_card.dart';
 
 class OrderSummary extends StatelessWidget {
   const OrderSummary({super.key});
@@ -51,7 +51,7 @@ class OrderSummary extends StatelessWidget {
           }),
           Divider(color: colorScheme.outline),
           const SizedBox(height: paddingDefault / 2),
-          const PriceDetailsCard(
+          const OrderPriceDetailsCard(
             //TODO: Make it dynamic
             price: 27900,
             discount: 2500,

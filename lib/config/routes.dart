@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '/screens/product/ui/product_details_page.dart';
 import '/screens/feedback/ui/feedback_page.dart';
 import '/screens/order_summary/ui/order_summary.dart';
 import '/screens/cart/ui/cart_page.dart';
@@ -42,7 +43,12 @@ class AppRoute {
       case OrderSummary.route:
         return MaterialPageRoute(builder: (_) => const OrderSummary());
       case FeedbackPage.route:
-        return MaterialPageRoute(builder: (_) => const FeedbackPage());
+        return MaterialPageRoute(
+          builder: (_) => const FeedbackPage(),
+          fullscreenDialog: true,
+        );
+      case ProductDetailsPage.route:
+        return MaterialPageRoute(builder: (_) => const ProductDetailsPage());
       default:
         return null;
     }

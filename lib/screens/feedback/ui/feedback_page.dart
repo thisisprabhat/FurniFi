@@ -16,15 +16,6 @@ class FeedbackPage extends StatefulWidget {
 }
 
 class _FeedbackPageState extends State<FeedbackPage> {
-  final List<String> emojies = [
-    'Smiling',
-    'Happy',
-    'Winking',
-    'Crying',
-    'Laughing',
-    'Surprise',
-  ];
-
   FeedbackType? feedbackType;
 
   String get _getArtBoard {
@@ -58,7 +49,7 @@ class _FeedbackPageState extends State<FeedbackPage> {
                 SizedBox(
                   height: 200,
                   child: RiveAnimation.asset(
-                    Assets.emojies,
+                    Assets.emoji,
                     artboard: _getArtBoard,
                   ),
                 ),

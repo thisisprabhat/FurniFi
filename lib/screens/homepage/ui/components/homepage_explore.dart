@@ -96,31 +96,32 @@ class _HomePageExploreState extends State<HomePageExplore> {
                 bool isSelected = selectedCategory == category;
                 return Column(
                   children: [
-                    InkWell(
-                      onTap: () {
-                        setState(() {
-                          selectedCategory = category;
-                        });
-                      },
-                      borderRadius: borderRadiusMedium,
-                      child: Container(
-                        margin: const EdgeInsets.all(paddingDefault / 4),
-                        height: 60,
-                        width: 60,
-                        decoration: BoxDecoration(
-                          borderRadius: borderRadiusMedium,
-                          color: isSelected
-                              ? colorScheme.primary
-                              : colorScheme.surface,
-                        ),
-                        child: Center(
-                          child: Image.asset(
-                            _getCategoryImageIcon(category),
-                            height: 40,
-                            width: 40,
+                    Expanded(
+                      child: InkWell(
+                        onTap: () {
+                          setState(() {
+                            selectedCategory = category;
+                          });
+                        },
+                        borderRadius: borderRadiusMedium,
+                        child: Container(
+                          margin: const EdgeInsets.all(paddingDefault / 4),
+                          width: 60,
+                          decoration: BoxDecoration(
+                            borderRadius: borderRadiusMedium,
                             color: isSelected
-                                ? colorScheme.onPrimary
-                                : colorScheme.outlineVariant,
+                                ? colorScheme.primary
+                                : colorScheme.surface,
+                          ),
+                          child: Center(
+                            child: Image.asset(
+                              _getCategoryImageIcon(category),
+                              height: 40,
+                              width: 40,
+                              color: isSelected
+                                  ? colorScheme.onPrimary
+                                  : colorScheme.outlineVariant,
+                            ),
                           ),
                         ),
                       ),

@@ -1,7 +1,7 @@
 part of '../order_summary.dart';
 
-class PriceDetailsCard extends StatelessWidget {
-  const PriceDetailsCard(
+class OrderPriceDetailsCard extends StatelessWidget {
+  const OrderPriceDetailsCard(
       {super.key, this.price, this.discount, this.deliveryCharge, this.total});
   final num? price;
   final num? discount;

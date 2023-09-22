@@ -8,10 +8,12 @@ class ScrollablePill extends StatelessWidget {
     this.pillColor,
     required this.lengthOfItems,
     required this.currentIndex,
+    this.thickness,
   });
   final double width;
   final Color? backgroundColor;
   final Color? pillColor;
+  final double? thickness;
   final int lengthOfItems;
   final int currentIndex;
 
@@ -31,10 +33,10 @@ class ScrollablePill extends StatelessWidget {
     return Stack(
       children: [
         Container(
-          height: 10,
+          height: thickness ?? 10,
           width: _widgetWidth,
           decoration: BoxDecoration(
-            color: backgroundColor ?? Colors.grey.shade200,
+            color: backgroundColor ?? Theme.of(context).colorScheme.surface,
             borderRadius: BorderRadius.circular(10),
           ),
         ),
@@ -42,10 +44,10 @@ class ScrollablePill extends StatelessWidget {
           left: _position,
           duration: const Duration(milliseconds: 500),
           child: Container(
-            height: 10,
+            height: thickness ?? 10,
             width: _pillWidth,
             decoration: BoxDecoration(
-              color: pillColor ?? Colors.black,
+              color: pillColor ?? Theme.of(context).colorScheme.primary,
               borderRadius: BorderRadius.circular(10),
             ),
           ),
