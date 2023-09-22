@@ -10,6 +10,7 @@ class Assets {
   static const String facebook = 'assets/images/facebook.png';
 
   static const String homePageImage1 = 'assets/images/homepage_image1.png';
+  static const String success = 'assets/images/success.png';
 
   static const String bookSelf = 'assets/images/bookSelf.png';
   static const String cabinetDrawer = 'assets/images/cabinetDrawer.png';
@@ -22,7 +23,7 @@ class Assets {
 
   //! Animations
   static const String deliveryLottie = 'assets/animations/delivery_lottie.json';
-  static const String success = 'assets/animations/success.json';
+  static const String successLottie = 'assets/animations/success.json';
   static const String emoji = 'assets/animations/emoji.riv';
 
   //! Network Images

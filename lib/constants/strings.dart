@@ -56,8 +56,10 @@ class AppString {
   static const continueString = 'Continue';
   static const explore = 'Explore';
   static const addToCart = 'Add to Cart';
+  static const orderedSuccessfully = 'Ordered Successfully';
 
   static const orderSummary = 'Order Summary';
+  static const trackOrder = 'Track Order';
 
   static const enterPassword = 'Enter Password';
   static const enterEmail = 'Enter your Email Id';
