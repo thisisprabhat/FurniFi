@@ -60,6 +60,9 @@ class AppString {
 
   static const orderSummary = 'Order Summary';
   static const trackOrder = 'Track Order';
+  static const orderId = 'Order Id';
+  static const orderedOn = 'Ordered On';
+  static const orderStatus = 'Order Status';
 
   static const enterPassword = 'Enter Password';
   static const enterEmail = 'Enter your Email Id';

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '/screens/track_order/ui/track_order_page.dart';
 import '/screens/product/ui/product_details_page.dart';
 import '/screens/feedback/ui/feedback_page.dart';
 import '/screens/order_summary/ui/order_summary.dart';
@@ -49,6 +50,8 @@ class AppRoute {
         );
       case ProductDetailsPage.route:
         return MaterialPageRoute(builder: (_) => const ProductDetailsPage());
+      case TrackOrderPage.route:
+        return MaterialPageRoute(builder: (_) => const TrackOrderPage());
       default:
         return null;
     }

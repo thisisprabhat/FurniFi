@@ -4,7 +4,6 @@ import '/constants/strings.dart';
 import '/constants/assets.dart';
 import '/constants/style.dart';
 import '/widgets/scroll_pill.dart';
-import '/screens/order_success/ui/order_success_page.dart';
 
 part 'components/product_page_images.dart';
 part 'components/product_page_info.dart';

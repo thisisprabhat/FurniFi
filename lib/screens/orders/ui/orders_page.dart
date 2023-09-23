@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '/screens/track_order/ui/track_order_page.dart';
+import '/constants/assets.dart';
 import '/constants/strings.dart';
 import '/constants/style.dart';
 
@@ -34,11 +36,10 @@ class OrdersPage extends StatelessWidget {
         ),
         itemCount: 10,
         itemBuilder: (_, index) {
-          return OrdersCard(
+          return const OrdersCard(
             productName: "Danderyd Chair",
             deliveryStatus: "Delivery ExpectedBy sept 22",
-            productImageUrl:
-                'https://images.unsplash.com/photo-1592078615290-033ee584e267?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80',
+            productImageUrl: Assets.chairNetwork1,
           );
         },
       ),
