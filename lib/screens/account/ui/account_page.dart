@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:furnifi/screens/cart/ui/cart_page.dart';
-import 'package:furnifi/screens/feedback/ui/feedback_page.dart';
 
 import '/constants/strings.dart';
 import '/constants/style.dart';
@@ -10,6 +8,9 @@ import '/screens/profile/ui/profile_page.dart';
 import '/screens/notification/ui/notification.dart';
 import '/screens/favourite/ui/favourites_page.dart';
 import '/screens/orders/ui/orders_page.dart';
+import '/screens/cart/ui/cart_page.dart';
+import '/screens/feedback/ui/feedback_page.dart';
+import '/screens/settings/ui/settings_page.dart';
 
 part 'components/accounts_page_card.dart';
 part 'components/accounts_page_item.dart';
@@ -88,12 +89,32 @@ class AccountPage extends StatelessWidget {
               AccountPageItem(
                 title: AppString.settings,
                 icon: Icons.settings_outlined,
-                onTap: () {},
+                onTap: () => Navigator.pushNamed(context, SettingsPage.route),
               ),
               AccountPageItem(
                 title: AppString.logout,
                 icon: Icons.login_rounded,
-                onTap: () {},
+                onTap: () {
+                  showDialog(
+                    context: context,
+                    builder: (_) {
+                      return AlertDialog(
+                        title: const Text(AppString.logout),
+                        content: const Text(AppString.logoutSubtitle),
+                        actions: [
+                          TextButton(
+                            onPressed: () {}, //TODO:Implement Logout action
+                            child: const Text(AppString.logout),
+                          ),
+                          TextButton(
+                            onPressed: () => Navigator.pop(context),
+                            child: const Text(AppString.cancel),
+                          ),
+                        ],
+                      );
+                    },
+                  );
+                },
               ),
             ],
           ),

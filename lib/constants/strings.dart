@@ -30,6 +30,7 @@ class AppString {
   static const cart = 'Cart';
   static const settings = 'Settings';
   static const logout = 'Logout';
+  static const logoutSubtitle = 'Logout from Furnifi';
   static const submit = 'Submit';
   static const addAddress = 'Add Address';
   static const deliveryAddress = 'Delivery Address';
@@ -63,6 +64,7 @@ class AppString {
   static const orderId = 'Order Id';
   static const orderedOn = 'Ordered On';
   static const orderStatus = 'Order Status';
+  static const search = 'Search';
 
   static const enterPassword = 'Enter Password';
   static const enterEmail = 'Enter your Email Id';
