@@ -1,21 +1,21 @@
 import 'package:flutter/material.dart';
 
-import '/screens/settings/ui/settings_page.dart';
-import '/screens/track_order/ui/track_order_page.dart';
-import '/screens/product/ui/product_details_page.dart';
-import '/screens/feedback/ui/feedback_page.dart';
-import '/screens/order_summary/ui/order_summary.dart';
-import '/screens/cart/ui/cart_page.dart';
-import '/screens/orders/ui/orders_page.dart';
-import '/screens/favourite/ui/favourites_page.dart';
-import '/screens/address/ui/change_address.dart';
-import '/screens/address/ui/add_address.dart';
-import '/screens/notification/ui/notification.dart';
-import '/screens/authentication/ui/login.dart';
-import '/screens/authentication/ui/signup.dart';
-import '/screens/onboarding/ui/onboarding_screen.dart';
-import '/screens/mainpage/ui/mainpage.dart';
-import '/screens/profile/ui/profile_page.dart';
+import '/presentation/screens/settings/ui/settings_page.dart';
+import '/presentation/screens/track_order/ui/track_order_page.dart';
+import '/presentation/screens/product/ui/product_details_page.dart';
+import '/presentation/screens/feedback/ui/feedback_page.dart';
+import '/presentation/screens/order_summary/ui/order_summary.dart';
+import '/presentation/screens/cart/ui/cart_page.dart';
+import '/presentation/screens/orders/ui/orders_page.dart';
+import '/presentation/screens/favourite/ui/favourites_page.dart';
+import '/presentation/screens/address/ui/change_address.dart';
+import '/presentation/screens/address/ui/add_address.dart';
+import '/presentation/screens/notification/ui/notification.dart';
+import '/presentation/screens/authentication/ui/login.dart';
+import '/presentation/screens/authentication/ui/signup.dart';
+import '/presentation/screens/onboarding/ui/onboarding_screen.dart';
+import '/presentation/screens/mainpage/ui/mainpage.dart';
+import '/presentation/screens/profile/ui/profile_page.dart';
 
 class AppRoute {
   static Route<dynamic>? onGenerateRoute(RouteSettings settings) {

@@ -5,7 +5,7 @@ import 'config/themes.dart';
 import 'config/routes.dart';
 import 'constants/strings.dart';
 import 'config/firebase_options.dart';
-import 'screens/onboarding/ui/onboarding_screen.dart';
+import 'presentation/screens/onboarding/ui/onboarding_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
