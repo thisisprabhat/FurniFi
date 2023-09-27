@@ -4,7 +4,7 @@ import 'package:lottie/lottie.dart';
 import '/constants/assets.dart';
 import '/constants/strings.dart';
 import '/presentation/screens/authentication/ui/login.dart';
-import '/widgets/scroll_pill.dart';
+import '/presentation/widgets/scroll_pill.dart';
 
 part 'components/onboarding_body.dart';
 part 'components/onboarding_buttons.dart';

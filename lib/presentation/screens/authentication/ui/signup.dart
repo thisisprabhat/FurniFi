@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '/widgets/profile_image.dart';
+import '/presentation/widgets/profile_image.dart';
 import '/constants/strings.dart';
 import '/utils/input_validation.dart';
 

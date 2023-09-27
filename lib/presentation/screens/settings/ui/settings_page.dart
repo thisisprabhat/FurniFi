@@ -19,7 +19,7 @@ class SettingsPage extends StatelessWidget {
           left: paddingDefault,
           right: paddingDefault,
         ),
-        children: [
+        children: const [
           ListTile(
             title: Text("Only this screen is pending"),
           )

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '/constants/style.dart';
-import '/widgets/address_card.dart';
+import '/presentation/widgets/address_card.dart';
 import '/utils/input_validation.dart';
 import '/constants/strings.dart';
 

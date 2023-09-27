@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '/constants/strings.dart';
 import '/constants/assets.dart';
 import '/constants/style.dart';
-import '/widgets/scroll_pill.dart';
+import '/presentation/widgets/scroll_pill.dart';
 
 part 'components/product_page_images.dart';
 part 'components/product_page_info.dart';

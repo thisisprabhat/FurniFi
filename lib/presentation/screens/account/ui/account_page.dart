@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '/constants/strings.dart';
 import '/constants/style.dart';
-import '/widgets/profile_image.dart';
+import '/presentation/widgets/profile_image.dart';
 import '/presentation/screens/address/ui/change_address.dart';
 import '/presentation/screens/profile/ui/profile_page.dart';
 import '/presentation/screens/notification/ui/notification.dart';

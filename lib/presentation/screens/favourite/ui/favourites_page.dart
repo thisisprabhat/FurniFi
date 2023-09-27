@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:furnifi/constants/style.dart';
 
-import '/widgets/rating_pill.dart';
+import '/presentation/widgets/rating_pill.dart';
 import '/constants/strings.dart';
 
 part 'components/favourites_card.dart';
