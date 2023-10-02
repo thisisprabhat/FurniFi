@@ -4,13 +4,14 @@ An E-Commerce app made with flutter from scratch following Software Development 
 
 ## Stage 1 - Planning
 Planning the app flow in [Draw.io](https://drive.google.com/file/d/1fKBfDXFuTcstt9O9NDbQhU6bEtSVvtan/view?usp=sharing)
-![Furnifi.jpg](images/Furnifi.jpg)
+![Furnifi.jpg](readme_res/Furnifi.jpg)
 
 ## Stage 2 - Design
 Designed the UI in figma
 - Created Ui sprint in notion and designed the ui.
 
-![figma.jpg](images/figma.png)
+download figma file : [FurniFi.fig](readme_res/FurniFi.fig)
+![figma.jpg](readme_res/figma.png)
 
 ## Stage 3 - Design converted into Code
 - Created Ui to code sprint in Notion and completed converting the ui into code.
