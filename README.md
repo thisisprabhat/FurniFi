@@ -9,8 +9,7 @@ Planning the app flow in [Draw.io](https://drive.google.com/file/d/1fKBfDXFuTcst
 ## Stage 2 - Design
 Designed the UI in figma
 - Created Ui sprint in notion and designed the ui.
-
-download figma file : [FurniFi.fig](readme_res/FurniFi.fig)
+- download figma file : [FurniFi.fig](readme_res/FurniFi.fig)
 ![figma.jpg](readme_res/figma.png)
 
 ## Stage 3 - Design converted into Code
