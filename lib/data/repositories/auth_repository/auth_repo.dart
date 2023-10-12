@@ -4,7 +4,6 @@ import '/data/models/models.dart';
 
 abstract class AuthRepository {
   User get loggedFirebaseUser;
-  String get authException;
 
   /// Creates a new user with the provided [information]
   Future<void> signUp(UserModel newUser, String password);

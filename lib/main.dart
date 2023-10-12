@@ -1,10 +1,12 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:furnifi/domain/bloc/auth_bloc/auth_bloc.dart';
 
-import 'config/themes.dart';
-import 'config/routes.dart';
-import 'constants/strings.dart';
-import 'config/firebase_options.dart';
+import 'core/config/themes.dart';
+import 'core/config/routes.dart';
+import 'core/constants/strings.dart';
+import 'core/config/firebase_options.dart';
 import 'presentation/screens/onboarding/ui/onboarding_screen.dart';
 
 void main() async {
@@ -20,12 +22,17 @@ class Furnifi extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: AppString.furnifi,
-      debugShowCheckedModeBanner: false,
-      theme: AppTheme.lightTheme,
-      initialRoute: OnboardingScreen.route,
-      onGenerateRoute: AppRoute.onGenerateRoute,
+    return MultiBlocProvider(
+      providers: [
+        BlocProvider(create: (_) => AuthBloc()),
+      ],
+      child: MaterialApp(
+        title: AppString.furnifi,
+        debugShowCheckedModeBanner: false,
+        theme: AppTheme.lightTheme,
+        initialRoute: OnboardingScreen.route,
+        onGenerateRoute: AppRoute.onGenerateRoute,
+      ),
     );
   }
 }

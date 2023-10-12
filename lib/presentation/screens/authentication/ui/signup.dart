@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 import '/presentation/widgets/profile_image.dart';
-import '/constants/strings.dart';
-import '/utils/input_validation.dart';
+import '/core/constants/strings.dart';
+import '/core/utils/input_validation.dart';
 
 part 'components/signup_text_fields.dart';
 

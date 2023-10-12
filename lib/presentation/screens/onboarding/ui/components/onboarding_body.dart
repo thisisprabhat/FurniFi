@@ -20,12 +20,26 @@ class OnboardingBody extends StatelessWidget {
       child: Column(
         children: [
           Expanded(
-            child: child ??
-                Image.asset(
-                  imagePath ?? "",
-                  height: 280,
-                  width: 280,
-                ),
+            child: ClipOval(
+              child: child ??
+                  Container(
+                    margin: const EdgeInsets.all(paddingDefault * 2),
+                    padding: const EdgeInsets.all(paddingDefault * 2),
+                    decoration: BoxDecoration(
+                        color: Theme.of(context).colorScheme.surface,
+                        shape: BoxShape.circle),
+                    child: Lottie.asset(imagePath ?? ''),
+                  ),
+            ),
+            // Image.asset(
+            //   imagePath ?? "",
+            //   height: 280,
+            //   width: 280,
+            // ),
+            // RiveAnimation.asset(
+            //   Assets.onboardingRive,
+            //   artboard: imagePath,
+            // ),
           ),
           Column(
             children: [

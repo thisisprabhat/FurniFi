@@ -1,9 +1,10 @@
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 import '../user_repository/user_repo.dart';
+import '/domain/exceptions/exception_handler.dart';
 import '/data/models/models.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 
 import 'auth_repo.dart';
 
@@ -11,11 +12,8 @@ class FirebaseAuthRepository implements AuthRepository {
   final FirebaseAuth _firebaseAuth = FirebaseAuth.instance;
   final GoogleSignIn _googleSignIn = GoogleSignIn();
   late UserRepository _userRepository; //TODO: assign a User repo object here
-  String _authException = "Authentication Failure";
   @override
   User get loggedFirebaseUser => _firebaseAuth.currentUser!;
-  @override
-  String get authException => _authException;
 
   /// Creates a new user with the provided [information]
   @override
@@ -30,8 +28,8 @@ class FirebaseAuthRepository implements AuthRepository {
 
       // Create new doc in users collection
       await _userRepository.addUserData(newUser);
-    } on FirebaseAuthException catch (e) {
-      _authException = e.message.toString();
+    } catch (e) {
+      AppExceptionHandler.handleAuthException(e);
     }
   }
 
@@ -43,12 +41,12 @@ class FirebaseAuthRepository implements AuthRepository {
         email: email,
         password: password,
       );
-    } on FirebaseAuthException catch (e) {
-      _authException = e.message.toString();
+    } catch (e) {
+      AppExceptionHandler.handleAuthException(e);
     }
   }
 
-  // /// Starts the Sign In with Google signIn.
+  /// Starts the Sign In with Google signIn.
   @override
   Future<void> logInWithGoogle() async {
     try {
@@ -60,22 +58,26 @@ class FirebaseAuthRepository implements AuthRepository {
         idToken: googleAuth.idToken,
       );
       await _firebaseAuth.signInWithCredential(credential);
-    } on FirebaseAuthException catch (e) {
-      _authException = e.message.toString();
+    } catch (e) {
+      AppExceptionHandler.handleAuthException(e);
     }
   }
 
   @override
-  Future<UserCredential> logInWithFacebook() async {
-    // Trigger the sign-in flow
-    final LoginResult loginResult = await FacebookAuth.instance.login();
+  Future<void> logInWithFacebook() async {
+    try {
+      // Trigger the sign-in flow
+      final LoginResult loginResult = await FacebookAuth.instance.login();
 
-    // Create a credential from the access token
-    final OAuthCredential facebookAuthCredential =
-        FacebookAuthProvider.credential(loginResult.accessToken!.token);
+      // Create a credential from the access token
+      final OAuthCredential facebookAuthCredential =
+          FacebookAuthProvider.credential(loginResult.accessToken!.token);
 
-    // Once signed in, return the UserCredential
-    return _firebaseAuth.signInWithCredential(facebookAuthCredential);
+      // Once signed in, return the UserCredential
+      _firebaseAuth.signInWithCredential(facebookAuthCredential);
+    } catch (e) {
+      AppExceptionHandler.handleAuthException(e);
+    }
   }
 
   @override
@@ -84,9 +86,9 @@ class FirebaseAuthRepository implements AuthRepository {
   /// Signs out the current user
   @override
   Future<void> logOut() async {
-    await _firebaseAuth.signOut().catchError((error) {
-      print(error);
-    });
+    await _firebaseAuth
+        .signOut()
+        .catchError(AppExceptionHandler.handleAuthException);
   }
 
   ///Singleton factory

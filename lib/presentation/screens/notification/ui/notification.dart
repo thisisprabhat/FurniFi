@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '/constants/strings.dart';
-import '/constants/style.dart';
+import '/core/constants/strings.dart';
+import '/core/constants/style.dart';
 
 part 'components/notification_tile.dart';
 

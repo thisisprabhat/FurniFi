@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+
 import 'package:lottie/lottie.dart';
 
-import '/constants/assets.dart';
-import '/constants/strings.dart';
+import '/core/constants/assets.dart';
+import '/core/constants/strings.dart';
+import '/core/constants/style.dart';
 import '/presentation/screens/authentication/ui/login.dart';
 import '/presentation/widgets/scroll_pill.dart';
 
@@ -26,17 +28,20 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     const OnboardingBody(
       title: AppString.onboardingTitle1,
       subtitle: AppString.onboardingSubtitle1,
-      imagePath: Assets.products,
+      // imagePath: Assets.products,
+      imagePath: Assets.categoryLottie,
     ),
     OnboardingBody(
       title: AppString.onboardingTitle2,
       subtitle: AppString.onboardingSubtitle2,
-      child: LottieBuilder.asset(Assets.deliveryLottie),
+      // child: LottieBuilder.asset(Assets.deliveryLottie),
+      imagePath: Assets.deliveryLottie,
     ),
     const OnboardingBody(
       title: AppString.onboardingTitle3,
       subtitle: AppString.onboardingSubtitle3,
-      imagePath: Assets.repair,
+      // imagePath: Assets.repair,
+      imagePath: Assets.drillAssemblyLottie,
     ),
   ];
   @override

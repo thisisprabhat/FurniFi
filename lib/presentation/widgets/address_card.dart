@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '/constants/style.dart';
+import '/core/constants/style.dart';
 import 'address_type.dart';
 
 export 'address_type.dart';

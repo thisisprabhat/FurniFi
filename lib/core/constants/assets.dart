@@ -22,9 +22,14 @@ class Assets {
   static const String popular = 'assets/images/popular.png';
 
   //! Animations
-  static const String deliveryLottie = 'assets/animations/delivery_lottie.json';
+  static const String deliveryLottie = 'assets/animations/delivery.json';
+  static const String categoryLottie = 'assets/animations/category.json';
+  static const String drillAssemblyLottie =
+      'assets/animations/drill_assembly.json';
   static const String successLottie = 'assets/animations/success.json';
   static const String emoji = 'assets/animations/emoji.riv';
+  static const String onboardingRive =
+      'assets/animations/furnifi_onboarding.riv';
 
   //! Network Images
   static const String sofaNetwork1 =

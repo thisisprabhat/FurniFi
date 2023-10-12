@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-import '/constants/style.dart';
+import '/core/constants/style.dart';
 import '/presentation/widgets/address_card.dart';
 import '/presentation/screens/address/ui/change_address.dart';
-import '/constants/strings.dart';
+import '/core/constants/strings.dart';
 
 part 'components/order_summary_card.dart';
 part 'components/order_price_details_card.dart';

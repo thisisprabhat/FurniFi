@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 import '/presentation/screens/track_order/ui/track_order_page.dart';
-import '/constants/assets.dart';
-import '/constants/strings.dart';
-import '/constants/style.dart';
+import '/core/constants/assets.dart';
+import '/core/constants/strings.dart';
+import '/core/constants/style.dart';
 
 part 'components/orders_card.dart';
 

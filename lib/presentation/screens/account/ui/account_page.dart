@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '/constants/strings.dart';
-import '/constants/style.dart';
 import '/presentation/widgets/profile_image.dart';
 import '/presentation/screens/address/ui/change_address.dart';
 import '/presentation/screens/profile/ui/profile_page.dart';
@@ -11,6 +9,8 @@ import '/presentation/screens/orders/ui/orders_page.dart';
 import '/presentation/screens/cart/ui/cart_page.dart';
 import '/presentation/screens/feedback/ui/feedback_page.dart';
 import '/presentation/screens/settings/ui/settings_page.dart';
+import '/core/constants/strings.dart';
+import '/core/constants/style.dart';
 
 part 'components/accounts_page_card.dart';
 part 'components/accounts_page_item.dart';

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '/constants/strings.dart';
-import '/constants/style.dart';
+import '/core/constants/strings.dart';
+import '/core/constants/style.dart';
 
 class SettingsPage extends StatelessWidget {
   const SettingsPage({super.key});

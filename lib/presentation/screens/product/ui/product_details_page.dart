@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '/constants/strings.dart';
-import '/constants/assets.dart';
-import '/constants/style.dart';
+import '/core/constants/strings.dart';
+import '/core/constants/assets.dart';
+import '/core/constants/style.dart';
 import '/presentation/widgets/scroll_pill.dart';
 
 part 'components/product_page_images.dart';

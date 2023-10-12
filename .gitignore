@@ -48,6 +48,6 @@ app.*.map.json
 
 #Custom gitignore
 pubspec.lock
-lib/config/firebase_options.dart
 lib/test.txt
 /android/app/src/main/res/values/strings.xml
+/lib/core/config/firebase_options.dart

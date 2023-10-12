@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:furnifi/constants/style.dart';
 
 import '/presentation/widgets/address_card.dart';
 import '/presentation/screens/address/ui/add_address.dart';
-import '/constants/strings.dart';
+import '/core/constants/strings.dart';
+import '/core/constants/style.dart';
 
 class ChangeAddress extends StatefulWidget {
   const ChangeAddress({super.key});

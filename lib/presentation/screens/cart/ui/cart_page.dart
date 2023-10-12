@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 import '/presentation/screens/order_summary/ui/order_summary.dart';
-import '/constants/strings.dart';
-import '/constants/style.dart';
+import '/core/constants/strings.dart';
+import '/core/constants/style.dart';
 
 part 'components/cart_page_card.dart';
 part 'components/cart_page_bottom.dart';

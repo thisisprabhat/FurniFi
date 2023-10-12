@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '/constants/assets.dart';
-import '/constants/strings.dart';
-import '/constants/style.dart';
+import '/core/constants/assets.dart';
+import '/core/constants/strings.dart';
+import '/core/constants/style.dart';
 
 class OrderSuccessPage extends StatelessWidget {
   const OrderSuccessPage({super.key});

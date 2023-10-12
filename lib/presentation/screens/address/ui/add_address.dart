@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-import '/constants/style.dart';
 import '/presentation/widgets/address_card.dart';
-import '/utils/input_validation.dart';
-import '/constants/strings.dart';
+import '/core/utils/input_validation.dart';
+import '/core/constants/strings.dart';
+import '/core/constants/style.dart';
 
 part 'components/type_of_address.dart';
 

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '/constants/style.dart';
+import '/core/constants/style.dart';
 import '/presentation/widgets/rating_pill.dart';
 import '/presentation/widgets/scroll_pill.dart';
-import '/constants/assets.dart';
-import '/constants/strings.dart';
+import '/core/constants/assets.dart';
+import '/core/constants/strings.dart';
 import '/presentation/screens/notification/ui/notification.dart';
 import '/presentation/screens/product/ui/product_details_page.dart';
 

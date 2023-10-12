@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 
 import '/presentation/screens/address/ui/change_address.dart';
 import '/presentation/widgets/address_card.dart';
-import '/constants/strings.dart';
-import '/constants/style.dart';
+import '/core/constants/strings.dart';
+import '/core/constants/style.dart';
 import '/presentation/widgets/profile_image.dart';
-import '/utils/input_validation.dart';
+import '/core/utils/input_validation.dart';
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({super.key});

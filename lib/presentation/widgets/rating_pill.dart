@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '/constants/style.dart';
+import '/core/constants/style.dart';
 
 class RatingPill extends StatelessWidget {
   const RatingPill({super.key, this.rating});

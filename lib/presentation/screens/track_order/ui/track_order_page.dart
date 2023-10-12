@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:furnifi/constants/assets.dart';
-import 'package:furnifi/constants/strings.dart';
-import 'package:furnifi/constants/style.dart';
+import '/core/constants/assets.dart';
+import '/core/constants/strings.dart';
+import '/core/constants/style.dart';
 
 import 'components/order_tracker.dart';
 

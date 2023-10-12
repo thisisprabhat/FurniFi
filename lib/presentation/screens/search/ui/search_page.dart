@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:furnifi/constants/strings.dart';
+import '/core/constants/strings.dart';
 
 class SearchPage extends StatefulWidget {
   const SearchPage({super.key});
