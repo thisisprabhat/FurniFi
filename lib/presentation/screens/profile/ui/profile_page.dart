@@ -109,8 +109,8 @@ class _ProfilePageState extends State<ProfilePage> {
                 const AddressCard(
                   name: 'Prabhat Kumar',
                   address:
-                      "B-12 Kali Tower, Lalpur, Ranchi, kali Tower Ranchi, Jharkhand - 834001",
-                  phone: "830*****23",
+                      'B-12 Kali Tower, Lalpur, Ranchi, kali Tower Ranchi, Jharkhand - 834001',
+                  phone: '830*****23',
                   type: AddressType.home,
                 ),
                 const SizedBox(height: paddingDefault),

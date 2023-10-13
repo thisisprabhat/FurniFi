@@ -24,7 +24,7 @@ class NotificationPage extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                const Text("${AppString.unreadNotifications}: 4"),
+                const Text('${AppString.unreadNotifications}: 4'),
                 TextButton(
                   onPressed: () {},
                   child: const Text(AppString.markAllAsRead),
@@ -39,12 +39,12 @@ class NotificationPage extends StatelessWidget {
         itemBuilder: (_, index) {
           return NotificationTile(
             read: index.isOdd,
-            title: "Prabhat $index",
+            title: 'Prabhat $index',
             imageUrl: index % 3 == 0
-                ? "https://images.unsplash.com/photo-1592078615290-033ee584e267?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80"
+                ? 'https://images.unsplash.com/photo-1592078615290-033ee584e267?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80'
                 : null,
             message:
-                "Customize your surrounding by choosing from our wide variety of collections",
+                'Customize your surrounding by choosing from our wide variety of collections',
           );
         },
         separatorBuilder: (_, index) => Divider(color: colorScheme.outline),

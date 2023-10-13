@@ -43,7 +43,7 @@ class HomePageCard extends StatelessWidget {
                   color: colorScheme.surfaceTint,
                   borderRadius: borderRadiusMedium,
                   image: DecorationImage(
-                    image: NetworkImage(imageUrl ?? ""),
+                    image: NetworkImage(imageUrl ?? ''),
                     fit: BoxFit.cover,
                   ),
                 ),
@@ -79,7 +79,7 @@ class HomePageCard extends StatelessWidget {
                       Row(
                         children: [
                           Text(
-                            " ₹${price?.truncate()}  ",
+                            ' ₹${price?.truncate()}  ',
                             style: TextStyle(
                               fontSize: 12,
                               decoration: TextDecoration.lineThrough,
@@ -87,7 +87,7 @@ class HomePageCard extends StatelessWidget {
                             ),
                           ),
                           Text(
-                            "₹$discountPrice",
+                            '₹$discountPrice',
                             style: const TextStyle(
                               fontSize: 12,
                               fontWeight: FontWeight.bold,

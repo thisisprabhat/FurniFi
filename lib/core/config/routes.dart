@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '/presentation/screens/settings/ui/settings_page.dart';
 import '/presentation/screens/track_order/ui/track_order_page.dart';
 import '/presentation/screens/product/ui/product_details_page.dart';

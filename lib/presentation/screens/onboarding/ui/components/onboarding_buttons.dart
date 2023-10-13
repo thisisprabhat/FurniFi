@@ -51,7 +51,7 @@ class OnboardingButtons extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        "   ${AppString.next} ",
+                        '   ${AppString.next} ',
                         style: Theme.of(context)
                             .textTheme
                             .labelMedium

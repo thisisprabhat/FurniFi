@@ -110,7 +110,7 @@ class CartPageCard extends StatelessWidget {
                       Row(
                         children: [
                           Text(
-                            " ₹ ${price?.truncate()}  ",
+                            ' ₹ ${price?.truncate()}  ',
                             style: TextStyle(
                               decoration: TextDecoration.lineThrough,
                               color: colorScheme.outlineVariant,
@@ -118,7 +118,7 @@ class CartPageCard extends StatelessWidget {
                             ),
                           ),
                           Text(
-                            "₹ $discountPrice",
+                            '₹ $discountPrice',
                             style: const TextStyle(
                               fontWeight: FontWeight.bold,
                               fontSize: 12,
@@ -139,7 +139,7 @@ class CartPageCard extends StatelessWidget {
                           ),
                           const Padding(
                             padding: EdgeInsets.all(8.0),
-                            child: Text("04"), //TODO: implement no. of items
+                            child: Text('04'), //TODO: implement no. of items
                           ),
                           IconButton(
                             style: IconButton.styleFrom(

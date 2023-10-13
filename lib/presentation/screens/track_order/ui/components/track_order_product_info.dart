@@ -36,7 +36,7 @@ class TrackOrderProductInfo extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const Text(
-                  "2-seat sofa, beige",
+                  '2-seat sofa, beige',
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
@@ -45,7 +45,7 @@ class TrackOrderProductInfo extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  "GAMMALBYN",
+                  'GAMMALBYN',
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
@@ -54,7 +54,7 @@ class TrackOrderProductInfo extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  "₹ 20,990",
+                  '₹ 20,990',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 20,

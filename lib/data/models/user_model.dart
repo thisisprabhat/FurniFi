@@ -17,5 +17,5 @@ class UserModel with _$UserModel {
       _$UserModelFromJson(json);
 
   const UserModel._();
-  String get fullName => "$firstName $lastName";
+  String get fullName => '$firstName $lastName';
 }

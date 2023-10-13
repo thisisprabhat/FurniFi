@@ -40,7 +40,7 @@ class NotificationTile extends StatelessWidget {
                   color: colorScheme.surfaceVariant,
                   image: DecorationImage(
                     fit: BoxFit.cover,
-                    image: NetworkImage(imageUrl ?? ""),
+                    image: NetworkImage(imageUrl ?? ''),
                   ),
                 ),
               ),

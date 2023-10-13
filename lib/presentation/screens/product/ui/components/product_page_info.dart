@@ -19,14 +19,14 @@ class ProductPageInfo extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const Text(
-                      "2-seat sofa, beige",
+                      '2-seat sofa, beige',
                       style: TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.w500,
                       ),
                     ),
                     Text(
-                      "GAMMALBYN",
+                      'GAMMALBYN',
                       style: TextStyle(
                         // fontSize: ,
                         color: colorScheme.primaryContainer,
@@ -52,7 +52,7 @@ class ProductPageInfo extends StatelessWidget {
                     ],
                   ),
                   Text(
-                    "(50 reviews)",
+                    '(50 reviews)',
                     style: TextStyle(
                         color: colorScheme.primaryContainer, fontSize: 12),
                   )
@@ -64,7 +64,7 @@ class ProductPageInfo extends StatelessWidget {
           Row(
             children: [
               const Text(
-                "₹ 20,990",
+                '₹ 20,990',
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 24,
@@ -74,7 +74,7 @@ class ProductPageInfo extends StatelessWidget {
                 padding:
                     const EdgeInsets.symmetric(horizontal: paddingDefault / 2),
                 child: Text(
-                  "₹ 23,500",
+                  '₹ 23,500',
                   style: TextStyle(
                     decoration: TextDecoration.lineThrough,
                     color: colorScheme.outlineVariant,
@@ -82,7 +82,7 @@ class ProductPageInfo extends StatelessWidget {
                 ),
               ),
               const Text(
-                "10% off",
+                '10% off',
                 style:
                     TextStyle(color: successColor, fontWeight: FontWeight.bold),
               ),
@@ -90,7 +90,7 @@ class ProductPageInfo extends StatelessWidget {
           ),
           const SizedBox(height: paddingDefault),
           Text(
-            "Durable metal springs in the seat give the sofa a springy comfort, allowing you to sit, relax and enjoy it for many years.",
+            'Durable metal springs in the seat give the sofa a springy comfort, allowing you to sit, relax and enjoy it for many years.',
             style: TextStyle(color: colorScheme.primaryContainer),
           ),
         ],

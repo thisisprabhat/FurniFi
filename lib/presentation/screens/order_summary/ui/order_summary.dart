@@ -13,18 +13,18 @@ class OrderSummary extends StatelessWidget {
   static const route = 'order_summary';
   static const List<Map<String, dynamic>> _itemList = [
     {
-      'productName': "Danderyd Chair",
-      'productDescription': "Durable metal springs in the seat give the sofa",
+      'productName': 'Danderyd Chair',
+      'productDescription': 'Durable metal springs in the seat give the sofa',
       'productImageUrl':
           'https://images.unsplash.com/photo-1592078615290-033ee584e267?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80',
       'price': 2200.0,
       'discountPercentage': 8.0
     },
     {
-      'productName': "Maxican Sofa",
-      'productDescription': "Durable metal springs in the seat give the sofa",
+      'productName': 'Maxican Sofa',
+      'productDescription': 'Durable metal springs in the seat give the sofa',
       'productImageUrl':
-          "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+          'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
       'price': 23200.0,
       'discountPercentage': 10.0
     },
@@ -78,8 +78,8 @@ class OrderSummary extends StatelessWidget {
             //TODO: make it dynamic
             name: 'Prabhat Kumar',
             address:
-                "B-12 Kali Tower, Lalpur, Ranchi, kali Tower Ranchi, Jharkhand - 834001",
-            phone: "830*****23",
+                'B-12 Kali Tower, Lalpur, Ranchi, kali Tower Ranchi, Jharkhand - 834001',
+            phone: '830*****23',
             type: AddressType.home,
           ),
           Padding(

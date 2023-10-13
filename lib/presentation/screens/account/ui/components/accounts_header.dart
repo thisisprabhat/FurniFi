@@ -21,10 +21,10 @@ class AccountsHeader extends StatelessWidget {
           ProfileImage(imageUrl: imageUrl),
           const SizedBox(height: 4),
           Text(
-            name ?? "N/A",
+            name ?? 'N/A',
             style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
           ),
-          Text(email ?? "N/A")
+          Text(email ?? 'N/A')
         ],
       ),
     );

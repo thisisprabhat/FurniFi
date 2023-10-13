@@ -22,7 +22,7 @@ class RatingPill extends StatelessWidget {
             child: Wrap(
               children: [
                 Text(
-                  "$rating",
+                  '$rating',
                   style: const TextStyle(
                     color: onSuccessColor,
                     fontWeight: FontWeight.w500,

@@ -29,7 +29,7 @@ class OrderPriceDetailsCard extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               const Text('Price( 8 items)'),
-              Text("₹${(price ?? 0).truncate()}")
+              Text('₹${(price ?? 0).truncate()}')
             ],
           ),
           Row(
@@ -37,7 +37,7 @@ class OrderPriceDetailsCard extends StatelessWidget {
             children: [
               const Text('Discount'),
               Text(
-                "- ₹${(discount ?? 0).truncate()}",
+                '- ₹${(discount ?? 0).truncate()}',
                 style: const TextStyle(color: successColor),
               )
             ],
@@ -46,7 +46,7 @@ class OrderPriceDetailsCard extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               const Text('Delivery Charge'),
-              Text("₹${(deliveryCharge ?? 0).truncate()}")
+              Text('₹${(deliveryCharge ?? 0).truncate()}')
             ],
           ),
           Row(
@@ -57,7 +57,7 @@ class OrderPriceDetailsCard extends StatelessWidget {
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
               Text(
-                "₹${(total ?? 0).truncate()}",
+                '₹${(total ?? 0).truncate()}',
                 style: const TextStyle(fontWeight: FontWeight.bold),
               )
             ],

@@ -25,7 +25,7 @@ class ProfileImage extends StatelessWidget {
             foregroundDecoration: const BoxDecoration(
               shape: BoxShape.circle,
               image: DecorationImage(
-                image: AssetImage(""), //TODO: Add image here
+                image: AssetImage(''), //TODO: Add image here
               ),
             ),
             decoration: BoxDecoration(

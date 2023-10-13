@@ -42,7 +42,7 @@ class FavouritesCard extends StatelessWidget {
                   color: colorScheme.surfaceTint,
                   borderRadius: borderRadiusMedium,
                   image: DecorationImage(
-                      image: NetworkImage(imageUrl ?? ""), fit: BoxFit.cover),
+                      image: NetworkImage(imageUrl ?? ''), fit: BoxFit.cover),
                 ),
               ),
               Positioned(
@@ -89,18 +89,18 @@ class FavouritesCard extends StatelessWidget {
                       Row(
                         children: [
                           Text(
-                            "${discountPercentage?.truncate()}% off",
+                            '${discountPercentage?.truncate()}% off',
                             style: const TextStyle(color: successColor),
                           ),
                           Text(
-                            "  ₹ ${price?.truncate()}  ",
+                            '  ₹ ${price?.truncate()}  ',
                             style: TextStyle(
                               decoration: TextDecoration.lineThrough,
                               color: colorScheme.outlineVariant,
                             ),
                           ),
                           Text(
-                            "₹ $discountPrice",
+                            '₹ $discountPrice',
                             style: const TextStyle(fontWeight: FontWeight.bold),
                           )
                         ],

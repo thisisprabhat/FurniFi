@@ -21,7 +21,7 @@ class SettingsPage extends StatelessWidget {
         ),
         children: const [
           ListTile(
-            title: Text("Only this screen is pending"),
+            title: Text('Only this screen is pending'),
           )
         ],
       ),

@@ -8,7 +8,7 @@ part 'components/signup_text_fields.dart';
 
 class Signup extends StatefulWidget {
   const Signup({super.key});
-  static const String route = "signup";
+  static const String route = 'signup';
 
   @override
   State<Signup> createState() => _SignupState();

@@ -7,16 +7,16 @@ enum AddressType { home, work, others }
 
 Map<AddressType, dynamic> _addressType = {
   AddressType.home: {
-    "title": AppString.home,
-    "icon": Icons.home_rounded,
+    'title': AppString.home,
+    'icon': Icons.home_rounded,
   },
   AddressType.work: {
-    "title": AppString.work,
-    "icon": Icons.maps_home_work_rounded,
+    'title': AppString.work,
+    'icon': Icons.maps_home_work_rounded,
   },
   AddressType.others: {
-    "title": AppString.others,
-    "icon": Icons.category_rounded,
+    'title': AppString.others,
+    'icon': Icons.category_rounded,
   },
 };
 

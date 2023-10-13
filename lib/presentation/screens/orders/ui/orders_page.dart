@@ -36,8 +36,8 @@ class OrdersPage extends StatelessWidget {
         itemCount: 10,
         itemBuilder: (_, index) {
           return const OrdersCard(
-            productName: "Danderyd Chair",
-            deliveryStatus: "Delivery ExpectedBy sept 22",
+            productName: 'Danderyd Chair',
+            deliveryStatus: 'Delivery ExpectedBy sept 22',
             productImageUrl: Assets.chairNetwork1,
           );
         },

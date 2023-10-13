@@ -32,7 +32,7 @@ class _FeedbackTypeWidgetState extends State<FeedbackTypeWidget> {
       case FeedbackType.complement:
         return AppString.complement;
       default:
-        return "";
+        return '';
     }
   }
 

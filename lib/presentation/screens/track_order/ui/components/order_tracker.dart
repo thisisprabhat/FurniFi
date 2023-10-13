@@ -203,12 +203,12 @@ class _OrderTrackerState extends State<OrderTracker>
                   TextSpan(
                     children: [
                       TextSpan(
-                          text: "Order Placed ",
+                          text: 'Order Placed ',
                           style: widget.headingTitleStyle ??
                               const TextStyle(
                                   fontSize: 16, fontWeight: FontWeight.bold)),
                       TextSpan(
-                        text: widget.orderPlacedDateAndTime ?? "",
+                        text: widget.orderPlacedDateAndTime ?? '',
                         style: widget.headingDateTextStyle ??
                             const TextStyle(fontSize: 16, color: Colors.grey),
                       ),
@@ -252,7 +252,7 @@ class _OrderTrackerState extends State<OrderTracker>
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            widget.orderTitleAndDateList?[index].title ?? "",
+                            widget.orderTitleAndDateList?[index].title ?? '',
                             style: widget.subTitleTextStyle ??
                                 const TextStyle(fontSize: 14),
                           ),
@@ -260,7 +260,7 @@ class _OrderTrackerState extends State<OrderTracker>
                             height: 4,
                           ),
                           Text(
-                            widget.orderTitleAndDateList?[index].date ?? "",
+                            widget.orderTitleAndDateList?[index].date ?? '',
                             style: widget.subDateTextStyle ??
                                 TextStyle(
                                     fontSize: 14, color: Colors.grey[300]),
@@ -310,12 +310,12 @@ class _OrderTrackerState extends State<OrderTracker>
                   TextSpan(
                     children: [
                       TextSpan(
-                          text: "Shipped ",
+                          text: 'Shipped ',
                           style: widget.headingTitleStyle ??
                               const TextStyle(
                                   fontSize: 16, fontWeight: FontWeight.bold)),
                       TextSpan(
-                        text: widget.shippedDateAndTime ?? "",
+                        text: widget.shippedDateAndTime ?? '',
                         style: widget.headingDateTextStyle ??
                             const TextStyle(fontSize: 16, color: Colors.grey),
                       ),
@@ -362,7 +362,7 @@ class _OrderTrackerState extends State<OrderTracker>
                           children: [
                             Text(
                               widget.shippedTitleAndDateList?[index].title ??
-                                  "",
+                                  '',
                               style: widget.subTitleTextStyle ??
                                   const TextStyle(fontSize: 14),
                             ),
@@ -370,7 +370,7 @@ class _OrderTrackerState extends State<OrderTracker>
                               height: 4,
                             ),
                             Text(
-                              widget.shippedTitleAndDateList?[index].date ?? "",
+                              widget.shippedTitleAndDateList?[index].date ?? '',
                               style: widget.subDateTextStyle ??
                                   TextStyle(
                                       fontSize: 14, color: Colors.grey[300]),
@@ -418,12 +418,12 @@ class _OrderTrackerState extends State<OrderTracker>
                   TextSpan(
                     children: [
                       TextSpan(
-                          text: "Out for delivery ",
+                          text: 'Out for delivery ',
                           style: widget.headingTitleStyle ??
                               const TextStyle(
                                   fontSize: 16, fontWeight: FontWeight.bold)),
                       TextSpan(
-                        text: widget.outForDeliveryDateAndTime ?? "",
+                        text: widget.outForDeliveryDateAndTime ?? '',
                         style: widget.headingDateTextStyle ??
                             const TextStyle(fontSize: 16, color: Colors.grey),
                       ),
@@ -471,7 +471,7 @@ class _OrderTrackerState extends State<OrderTracker>
                             Text(
                               widget.outForDeliveryTitleAndDateList?[index]
                                       .title ??
-                                  "",
+                                  '',
                               style: widget.subTitleTextStyle ??
                                   const TextStyle(fontSize: 14),
                             ),
@@ -481,7 +481,7 @@ class _OrderTrackerState extends State<OrderTracker>
                             Text(
                               widget.outForDeliveryTitleAndDateList?[index]
                                       .date ??
-                                  "",
+                                  '',
                               style: widget.subDateTextStyle ??
                                   TextStyle(
                                       fontSize: 14, color: Colors.grey[300]),
@@ -525,7 +525,7 @@ class _OrderTrackerState extends State<OrderTracker>
                   TextSpan(
                     children: [
                       TextSpan(
-                          text: "Delivered ",
+                          text: 'Delivered ',
                           style: widget.headingTitleStyle ??
                               const TextStyle(
                                   fontSize: 16, fontWeight: FontWeight.bold)),
@@ -549,7 +549,7 @@ class _OrderTrackerState extends State<OrderTracker>
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      widget.deliveredTitleAndDateList?[index].title ?? "",
+                      widget.deliveredTitleAndDateList?[index].title ?? '',
                       style: widget.subTitleTextStyle ??
                           const TextStyle(fontSize: 14),
                     ),
@@ -557,7 +557,7 @@ class _OrderTrackerState extends State<OrderTracker>
                       height: 4,
                     ),
                     Text(
-                      widget.deliveredTitleAndDateList?[index].date ?? "",
+                      widget.deliveredTitleAndDateList?[index].date ?? '',
                       style: widget.subDateTextStyle ??
                           TextStyle(fontSize: 14, color: Colors.grey[300]),
                     )

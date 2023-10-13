@@ -1,3 +1,4 @@
+import 'package:furnifi/core/utils/colored_log.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -42,6 +43,7 @@ class FirebaseAuthRepository implements AuthRepository {
         password: password,
       );
     } catch (e) {
+      ColoredLog.red(e);
       AppExceptionHandler.handleAuthException(e);
     }
   }

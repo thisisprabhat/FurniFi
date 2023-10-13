@@ -8,23 +8,23 @@ import 'components/order_tracker.dart';
 part 'components/track_order_product_info.dart';
 
 List<TextDto> _orderList = [
-  TextDto("Your order has been placed", "Fri, 15th Sept '23 - 10:47pm"),
-  TextDto("Seller ha processed your order", "Sun, 17th Sept '23 - 10:19am"),
-  TextDto("Your item has been picked up by courier partner.",
+  TextDto('Your order has been placed', "Fri, 15th Sept '23 - 10:47pm"),
+  TextDto('Seller ha processed your order', "Sun, 17th Sept '23 - 10:19am"),
+  TextDto('Your item has been picked up by courier partner.',
       "Tue, 19th Sept '23 - 5:00pm"),
 ];
 
 List<TextDto> _shippedList = [
-  TextDto("Your order has been shipped", "Tue, 26th Sept '23 - 5:04pm"),
-  TextDto("Your item has been received in the nearest hub to you.", null),
+  TextDto('Your order has been shipped', "Tue, 26th Sept '23 - 5:04pm"),
+  TextDto('Your item has been received in the nearest hub to you.', null),
 ];
 
 List<TextDto> _outOfDeliveryList = [
-  TextDto("Your order is out for delivery", "Thu, 27th Sept '23 - 2:27pm"),
+  TextDto('Your order is out for delivery', "Thu, 27th Sept '23 - 2:27pm"),
 ];
 
 List<TextDto> _deliveredList = [
-  TextDto("Your order will be delivered by", "Thu, 29th Sept '23 - 3:58pm"),
+  TextDto('Your order will be delivered by', "Thu, 29th Sept '23 - 3:58pm"),
 ];
 
 class TrackOrderPage extends StatelessWidget {
@@ -105,7 +105,7 @@ class TrackOrderPage extends StatelessWidget {
       child: Row(
         children: [
           Text(
-            "$title :  ",
+            '$title :  ',
             style: const TextStyle(fontWeight: FontWeight.w500),
           ),
           Expanded(child: Text(value))

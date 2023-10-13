@@ -16,18 +16,18 @@ class ChangeAddress extends StatefulWidget {
 class _ChangeAddressState extends State<ChangeAddress> {
   final List<Map<String, dynamic>> _addresses = [
     {
-      "name": 'Prabhat Kumar',
-      "address":
-          "B-12 Kali Tower, Lalpur, Ranchi, kali Tower Ranchi, Jharkhand - 834001",
-      "phone": "830*****23",
-      "type": AddressType.work,
+      'name': 'Prabhat Kumar',
+      'address':
+          'B-12 Kali Tower, Lalpur, Ranchi, kali Tower Ranchi, Jharkhand - 834001',
+      'phone': '830*****23',
+      'type': AddressType.work,
     },
     {
-      "name": 'Rahul Kumar',
-      "address":
-          "82989 Street 11, Sector 4, Bokaro Steel City, Bokaro, Jharkhand - 834001",
-      "phone": "943*****86",
-      "type": AddressType.home,
+      'name': 'Rahul Kumar',
+      'address':
+          '82989 Street 11, Sector 4, Bokaro Steel City, Bokaro, Jharkhand - 834001',
+      'phone': '943*****86',
+      'type': AddressType.home,
     },
   ];
   int _selectedIndex = 0;
@@ -57,7 +57,7 @@ class _ChangeAddressState extends State<ChangeAddress> {
                       isSelected: index == _selectedIndex,
                       address: address['address'],
                       type: address['type'],
-                      phone: address["phone"],
+                      phone: address['phone'],
                       onTap: () {
                         setState(() {
                           _selectedIndex = index;

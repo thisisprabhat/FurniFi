@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 enum Logs { print, debugPrint, logs, hideLogs }
 
-Logs _logs = Logs.logs;
+Logs _logs = Logs.debugPrint;
 
 /// ## ColorCodes
 ///  30. black
@@ -40,7 +40,7 @@ class ColoredLog {
       String coloredName =
           "\x1B[${colorCode.toString()}m${name ?? "Log"}\x1B[0m";
       String coloredMessage =
-          "\x1B[${colorCode.toString()}m${message.toString()}\x1B[0m";
+          '\x1B[${colorCode.toString()}m${message.toString()}\x1B[0m';
 
       log(
         coloredMessage,
@@ -49,14 +49,14 @@ class ColoredLog {
     } else if (_logs == Logs.print) {
       String coloredName = "\x1B[37m${name ?? "Log"}\x1B[0m";
       String coloredMessage =
-          "\x1B[${colorCode.toString()}m${message.toString()}\x1B[0m";
+          '\x1B[${colorCode.toString()}m${message.toString()}\x1B[0m';
       // ignore: avoid_print
-      print("[$coloredName] $coloredMessage");
+      print('[$coloredName] $coloredMessage');
     } else if (_logs == Logs.debugPrint) {
       String coloredName = "\x1B[37m${name ?? "Log"}\x1B[0m";
       String coloredMessage =
-          "\x1B[${colorCode.toString()}m${message.toString()}\x1B[0m";
-      debugPrint("[$coloredName] $coloredMessage");
+          '\x1B[${colorCode.toString()}m${message.toString()}\x1B[0m';
+      debugPrint('[$coloredName] $coloredMessage');
     }
   }
 

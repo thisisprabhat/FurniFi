@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:furnifi/core/utils/common.dart';
+import 'package:furnifi/domain/bloc/auth_bloc/auth_bloc.dart';
+import 'package:furnifi/presentation/screens/onboarding/ui/onboarding_screen.dart';
 
 import '/presentation/widgets/profile_image.dart';
 import '/presentation/screens/address/ui/change_address.dart';
@@ -26,7 +30,7 @@ class AccountPage extends StatelessWidget {
       appBar: AppBar(
         elevation: 0,
         backgroundColor: colorScheme.background,
-        title: const Text("Accounts"),
+        title: const Text('Accounts'),
         actions: [
           IconButton(
             icon: const Icon(Icons.notifications_outlined),
@@ -39,8 +43,8 @@ class AccountPage extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: paddingDefault),
         children: [
           const AccountsHeader(
-            name: "Prabhat Kumar",
-            email: "thisisprabhatk@gmail.com",
+            name: 'Prabhat Kumar',
+            email: 'thisisprabhatk@gmail.com',
           ),
           AccountsPageCard(
             items: [
@@ -91,30 +95,46 @@ class AccountPage extends StatelessWidget {
                 icon: Icons.settings_outlined,
                 onTap: () => Navigator.pushNamed(context, SettingsPage.route),
               ),
-              AccountPageItem(
-                title: AppString.logout,
-                icon: Icons.login_rounded,
-                onTap: () {
-                  showDialog(
-                    context: context,
-                    builder: (_) {
-                      return AlertDialog(
-                        title: const Text(AppString.logout),
-                        content: const Text(AppString.logoutSubtitle),
-                        actions: [
-                          TextButton(
-                            onPressed: () {}, //TODO:Implement Logout action
-                            child: const Text(AppString.logout),
-                          ),
-                          TextButton(
-                            onPressed: () => Navigator.pop(context),
-                            child: const Text(AppString.cancel),
-                          ),
-                        ],
-                      );
-                    },
+              BlocListener<AuthBloc, AuthState>(
+                listener: (context, state) {
+                  state.maybeWhen(
+                    logout: () => Navigator.pushReplacementNamed(
+                        context, OnboardingScreen.route),
+                    logoutFailed: (e) =>
+                        snackBar(context, message: e.message ?? ''),
+                    orElse: () {},
                   );
                 },
+                child: AccountPageItem(
+                  title: AppString.logout,
+                  icon: Icons.login_rounded,
+                  onTap: () {
+                    showDialog(
+                      context: context,
+                      builder: (_) {
+                        return AlertDialog(
+                          title: const Text(AppString.logout),
+                          content: const Text(AppString.logoutSubtitle),
+                          actions: [
+                            TextButton(
+                              onPressed: () {
+                                context
+                                    .read<AuthBloc>()
+                                    .add(const AuthEvent.logout());
+                                Navigator.pop(context);
+                              },
+                              child: const Text(AppString.logout),
+                            ),
+                            TextButton(
+                              onPressed: () => Navigator.pop(context),
+                              child: const Text(AppString.cancel),
+                            ),
+                          ],
+                        );
+                      },
+                    );
+                  },
+                ),
               ),
             ],
           ),

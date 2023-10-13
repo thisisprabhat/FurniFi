@@ -8,7 +8,7 @@ import '/presentation/screens/search/ui/search_page.dart';
 class MainPage extends StatefulWidget {
   const MainPage({Key? key}) : super(key: key);
 
-  static const String route = "/";
+  static const String route = 'home';
 
   @override
   State<MainPage> createState() => _MainPageState();
@@ -48,22 +48,22 @@ class _MainPageState extends State<MainPage> {
           BottomNavigationBarItem(
             icon: Icon(Icons.home_outlined),
             activeIcon: Icon(Icons.home_rounded),
-            label: "Home",
+            label: 'Home',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.search_outlined),
             activeIcon: Icon(Icons.search_rounded),
-            label: "Search",
+            label: 'Search',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.shopping_cart_outlined),
             activeIcon: Icon(Icons.shopping_cart_rounded),
-            label: "Cart",
+            label: 'Cart',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person_outline_rounded),
             activeIcon: Icon(Icons.person_rounded),
-            label: "Account",
+            label: 'Account',
           ),
         ],
       ),

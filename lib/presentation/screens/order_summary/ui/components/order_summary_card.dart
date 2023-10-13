@@ -83,7 +83,7 @@ class OrderSummaryCard extends StatelessWidget {
                     Row(
                       children: [
                         Text(
-                          " ₹ ${price?.truncate()}  ",
+                          ' ₹ ${price?.truncate()}  ',
                           style: TextStyle(
                             decoration: TextDecoration.lineThrough,
                             color: colorScheme.outlineVariant,
@@ -91,7 +91,7 @@ class OrderSummaryCard extends StatelessWidget {
                           ),
                         ),
                         Text(
-                          "₹ $discountPrice",
+                          '₹ $discountPrice',
                           style: const TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 12,

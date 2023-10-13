@@ -2,12 +2,12 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:furnifi/domain/bloc/auth_bloc/auth_bloc.dart';
+import 'package:furnifi/presentation/screens/onboarding/ui/onboarding_screen.dart';
 
 import 'core/config/themes.dart';
 import 'core/config/routes.dart';
 import 'core/constants/strings.dart';
 import 'core/config/firebase_options.dart';
-import 'presentation/screens/onboarding/ui/onboarding_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

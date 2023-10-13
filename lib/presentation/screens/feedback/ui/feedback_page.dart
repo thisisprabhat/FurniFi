@@ -29,7 +29,7 @@ class _FeedbackPageState extends State<FeedbackPage> {
       case FeedbackType.complement:
         return 'Happy';
       default:
-        return "Smiling";
+        return 'Smiling';
     }
   }
 
