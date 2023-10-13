@@ -1,15 +1,16 @@
-part of 'auth_bloc.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
 
-class AuthState {}
+import '/domain/exceptions/base_exception.dart';
+part 'auth_state.freezed.dart';
 
-class LoginInitialState extends AuthState {}
-
-class LoggingInState extends AuthState {}
-
-class LoginFailState extends AuthState {
-  final AppException error;
-
-  LoginFailState(this.error);
+@freezed
+class AuthState with _$AuthState {
+  const factory AuthState.initial() = AuthInitialState;
+  const factory AuthState.loggingIn() = LoggingInState;
+  const factory AuthState.loginFailed(AppException error) = LogingFailedState;
+  const factory AuthState.loginSuccess() = LogingSuccessState;
+  const factory AuthState.alreadyLoggedIn() = UserAlreadyLoggedInState;
+  const factory AuthState.noUserFound() = NoUserFoundState;
+  const factory AuthState.logout() = LogoutState;
+  const factory AuthState.logoutFailed(AppException e) = LogoutFailedState;
 }
-
-class LoginSuccessState extends AuthState {}

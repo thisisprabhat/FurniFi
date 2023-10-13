@@ -1,14 +1,16 @@
-part of 'auth_bloc.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
 
-abstract class AuthEvent {}
+part 'auth_event.freezed.dart';
 
-class LoginWithEmailAndPasswordEvent extends AuthEvent {
-  final String email;
-  final String password;
-
-  LoginWithEmailAndPasswordEvent({required this.email, required this.password});
+@freezed
+class AuthEvent with _$AuthEvent {
+  const factory AuthEvent.checkLoggedInUser() = CheckLoggedInUserEvent;
+  const factory AuthEvent.loginWithFacebook() = LoginWithFacebookEvent;
+  const factory AuthEvent.loginWithGoogle() = LoginWithGoogleEvent;
+  const factory AuthEvent.loggingIn() = LoggingInEvent;
+  const factory AuthEvent.logout() = LogoutEvent;
+  const factory AuthEvent.loginWithEmailAndPassword({
+    required String email,
+    required String password,
+  }) = LoginWithEmailAndPasswordEvent;
 }
-
-class LoginWithGoogleEvent extends AuthEvent {}
-
-class LoginWithFacebookEvent extends AuthEvent {}
